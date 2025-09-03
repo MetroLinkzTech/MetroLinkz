@@ -1,0 +1,1186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metro Linkz Inc. | Linking the Future of Finance & Security</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0a2463;
+            --secondary: #3e92cc;
+            --accent: #2dc7ff;
+            --dark: #13293d;
+            --light: #f8f9fa;
+            --gold: #ffd166;
+            --text: #333;
+            --transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: var(--text);
+            background-color: var(--light);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--dark);
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header & Navigation */
+        header {
+            background-color: rgba(10, 36, 99, 0.95);
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            transition: var(--transition);
+        }
+        
+        header.scrolled {
+            padding: 10px 0;
+            background-color: var(--primary);
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo img {
+            height: 50px;
+            margin-right: 10px;
+        }
+        
+        .logo-text {
+            color: white;
+            font-size: 1.8rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+        
+        .logo-text span {
+            color: var(--accent);
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 30px;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1rem;
+            transition: var(--transition);
+            position: relative;
+            padding: 5px 0;
+        }
+        
+        nav ul li a:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: var(--accent);
+            transition: var(--transition);
+        }
+        
+        nav ul li a:hover:after {
+            width: 100%;
+        }
+        
+        .nav-cta {
+            background-color: var(--accent);
+            color: var(--dark) !important;
+            padding: 10px 20px;
+            border-radius: 30px;
+            font-weight: 600 !important;
+            transition: var(--transition);
+        }
+        
+        .nav-cta:hover {
+            background-color: var(--gold);
+            transform: translateY(-3px);
+        }
+        
+        .nav-cta:after {
+            display: none;
+        }
+        
+        .mobile-toggle {
+            display: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: white;
+            padding: 160px 0 100px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-content {
+            max-width: 650px;
+            z-index: 2;
+            position: relative;
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            color: white;
+            line-height: 1.2;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            max-width: 600px;
+        }
+        
+        .hero-buttons {
+            display: flex;
+            gap: 20px;
+            margin-top: 2rem;
+        }
+        
+        .btn {
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-block;
+            transition: var(--transition);
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        
+        .btn-primary {
+            background-color: var(--accent);
+            color: var(--dark);
+        }
+        
+        .btn-primary:hover {
+            background-color: var(--gold);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .btn-secondary {
+            background-color: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+        
+        .btn-secondary:hover {
+            background-color: white;
+            color: var(--primary);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .hero-animation {
+            position: absolute;
+            right: -50px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 600px;
+            height: 600px;
+            opacity: 0.8;
+        }
+        
+        /* About Section */
+        .section {
+            padding: 100px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        
+        .section-title h2 {
+            font-size: 2.8rem;
+            position: relative;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+        
+        .section-title h2:after {
+            content: '';
+            position: absolute;
+            width: 80px;
+            height: 4px;
+            background: var(--accent);
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .section-title p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto;
+            color: #666;
+        }
+        
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 60px;
+        }
+        
+        .about-text {
+            flex: 1;
+        }
+        
+        .about-text h3 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        
+        .about-text p {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+        
+        .about-image {
+            flex: 1;
+            position: relative;
+        }
+        
+        .about-image img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            transition: var(--transition);
+        }
+        
+        .stats-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 50px;
+            text-align: center;
+        }
+        
+        .stat {
+            padding: 20px;
+        }
+        
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+        
+        .stat-text {
+            font-size: 1.1rem;
+            color: #666;
+        }
+        
+        /* Ecosystem Section */
+        .ecosystem {
+            background-color: #f5f9ff;
+        }
+        
+        .ecosystem-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .ecosystem-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            transition: var(--transition);
+        }
+        
+        .ecosystem-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+        
+        .card-header {
+            padding: 25px 25px 15px;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: white;
+        }
+        
+        .card-header h3 {
+            color: white;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .card-body {
+            padding: 25px;
+        }
+        
+        .card-body p {
+            margin-bottom: 20px;
+        }
+        
+        .card-features {
+            list-style: none;
+            margin-bottom: 20px;
+        }
+        
+        .card-features li {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .card-features li i {
+            color: var(--accent);
+            margin-right: 10px;
+        }
+        
+        /* Metro Coin Section */
+        .metro-coin {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .coin-container {
+            display: flex;
+            gap: 50px;
+            align-items: center;
+        }
+        
+        .coin-info {
+            flex: 1;
+        }
+        
+        .coin-visual {
+            flex: 1;
+            text-align: center;
+        }
+        
+        .coin-card {
+            background: linear-gradient(135deg, #0a2463 0%, #3e92cc 100%);
+            color: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        
+        .coin-card h3 {
+            color: white;
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+        }
+        
+        .coin-stats {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .coin-stats:last-child {
+            border-bottom: none;
+        }
+        
+        .coin-label {
+            font-weight: 500;
+        }
+        
+        .coin-value {
+            font-weight: 700;
+            color: var(--gold);
+        }
+        
+        /* Leadership Section */
+        .leadership {
+            background-color: #f5f9ff;
+        }
+        
+        .leader-profile {
+            display: flex;
+            gap: 50px;
+            align-items: center;
+        }
+        
+        .leader-image {
+            flex: 1;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 400px;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            border-radius: 10px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+        
+        .leader-icon {
+            font-size: 10rem;
+            color: rgba(255, 255, 255, 0.7);
+        }
+        
+        .leader-info {
+            flex: 1;
+        }
+        
+        .leader-info h3 {
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+            color: var(--primary);
+        }
+        
+        .leader-title {
+            font-size: 1.2rem;
+            color: var(--secondary);
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+        
+        .leader-quote {
+            font-style: italic;
+            border-left: 4px solid var(--accent);
+            padding-left: 20px;
+            margin: 30px 0;
+            font-size: 1.2rem;
+        }
+        
+        /* FAQ Section */
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .faq-item {
+            margin-bottom: 20px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+        }
+        
+        .faq-question {
+            padding: 20px;
+            background: white;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+        
+        .faq-answer {
+            padding: 0 20px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+            background: white;
+        }
+        
+        .faq-answer.open {
+            padding: 20px;
+            max-height: 300px;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--dark);
+            color: white;
+            padding: 80px 0 30px;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+        
+        .footer-column h3 {
+            color: white;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 15px;
+        }
+        
+        .footer-links a {
+            color: #ccc;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        .footer-links a:hover {
+            color: var(--accent);
+            padding-left: 5px;
+        }
+        
+        .footer-social {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .footer-social a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: white;
+            transition: var(--transition);
+        }
+        
+        .footer-social a:hover {
+            background: var(--accent);
+            transform: translateY(-3px);
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        /* Animations */
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+        
+        .animated {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+        
+        .animated.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .hero h1 {
+                font-size: 2.8rem;
+            }
+            
+            .about-content, .coin-container, .leader-profile {
+                flex-direction: column;
+            }
+            
+            .hero-animation {
+                display: none;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .header-container {
+                padding: 15px 0;
+            }
+            
+            nav ul {
+                display: none;
+                position: absolute;
+                top: 80px;
+                left: 0;
+                width: 100%;
+                background: var(--primary);
+                flex-direction: column;
+                padding: 20px;
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            }
+            
+            nav ul.active {
+                display: flex;
+            }
+            
+            nav ul li {
+                margin: 15px 0;
+            }
+            
+            .mobile-toggle {
+                display: block;
+            }
+            
+            .hero-buttons {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            
+            .section-title h2 {
+                font-size: 2.2rem;
+            }
+            
+            .leader-icon {
+                font-size: 6rem;
+            }
+            
+            .leader-image {
+                min-height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header id="header">
+        <div class="container header-container">
+            <div class="logo">
+                <div class="logo-text">Metro<span>Linkz</span></div>
+            </div>
+            
+            <nav>
+                <ul id="menu">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#ecosystem">Ecosystem</a></li>
+                    <li><a href="#metro-coin">Metro Coin</a></li>
+                    <li><a href="#leadership">Leadership</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contact" class="nav-cta">Join Now</a></li>
+                </ul>
+            </nav>
+            
+            <div class="mobile-toggle" id="mobile-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Linking the Future of Finance & Security</h1>
+                <p>Metro Linkz Inc. is a next-generation technology company built to redefine how Africa — and the world — connects, transacts, and secures digital assets.</p>
+                <div class="hero-buttons">
+                    <a href="#ecosystem" class="btn btn-primary">Explore Ecosystem</a>
+                    <a href="#metro-coin" class="btn btn-secondary">Discover MTC</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="hero-animation">
+            <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#2dc7ff30" d="M37.5,279.5c64.13-33.5,168.65-63.5,275.5-34.5c91.5,25,125,97.5,125,97.5s-61.5-5-137.5-5s-150,15-150,15s97.5,32.5,197.5,20s155-72.5,155-72.5" />
+                <circle cx="250" cy="250" r="120" fill="#ffd16620" stroke="#FFD166" stroke-width="2" />
+                <circle cx="250" cy="250" r="80" fill="#0a246320" stroke="#0A2463" stroke-width="2" />
+                <circle cx="250" cy="250" r="40" fill="#3e92cc40" stroke="#3E92CC" stroke-width="2" />
+            </svg>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-title animated">
+                <h2>About Metro Linkz Inc.</h2>
+                <p>We are more than a company; we are the parent ecosystem powering multiple innovative products, platforms, and services designed to push the boundaries of digital finance, cybersecurity, and technological empowerment.</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text animated">
+                    <h3>Our Vision for Africa and Beyond</h3>
+                    <p>Headquartered in Lagos, Metro Linkz is positioned to become the leading technology ecosystem in Africa, with a global vision to empower digital economies and secure digital futures.</p>
+                    <p>We believe in the transformative power of technology to bridge economic gaps, create opportunities, and build a more inclusive financial system for all.</p>
+                    <p>Our comprehensive approach combines cutting-edge blockchain technology with advanced cybersecurity measures to create a secure, transparent, and efficient digital ecosystem.</p>
+                </div>
+                
+                <div class="about-image animated">
+                    <img src="https://images.unsplash.com/photo-1568992687947-868a62a9f521?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80" alt="Metro Linkz Vision">
+                </div>
+            </div>
+            
+            <div class="stats-container">
+                <div class="stat animated">
+                    <div class="stat-number" id="stat1">5</div>
+                    <div class="stat-text">Core Products</div>
+                </div>
+                
+                <div class="stat animated">
+                    <div class="stat-number" id="stat2">21.6m</div>
+                    <div class="stat-text">MTC Total Supply</div>
+                </div>
+                
+                <div class="stat animated">
+                    <div class="stat-number" id="stat3">100+</div>
+                    <div class="stat-text">Team Members</div>
+                </div>
+                
+                <div class="stat animated">
+                    <div class="stat-number" id="stat4">2023</div>
+                    <div class="stat-text">Established</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ecosystem Section -->
+    <section class="section ecosystem" id="ecosystem">
+        <div class="container">
+            <div class="section-title animated">
+                <h2>The Metro Linkz Ecosystem</h2>
+                <p>At the heart of Metro Linkz lies a network of powerful products that work together to drive growth, security, and accessibility.</p>
+            </div>
+            
+            <div class="ecosystem-grid">
+                <div class="ecosystem-card animated">
+                    <div class="card-header">
+                        <h3>Leancnstask</h3>
+                        <p>Gateway to Greater Heights</p>
+                    </div>
+                    <div class="card-body">
+                        <p>Our flagship task and engagement platform, designed to onboard users into the Metro Coin Network System in a fun, interactive, and rewarding way.</p>
+                        <ul class="card-features">
+                            <li><i class="fas fa-check-circle"></i> User onboarding & engagement</li>
+                            <li><i class="fas fa-check-circle"></i> Task-based rewards system</li>
+                            <li><i class="fas fa-check-circle"></i> Community building platform</li>
+                            <li><i class="fas fa-check-circle"></i> Stakeholder growth opportunities</li>
+                        </ul>
+                        <a href="#" class="btn btn-secondary">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="ecosystem-card animated">
+                    <div class="card-header">
+                        <h3>Metro Wallet</h3>
+                        <p>Financial Backbone of the Ecosystem</p>
+                    </div>
+                    <div class="card-body">
+                        <p>The core financial hub of Metro Linkz, designed in phases of evolution from simple wallet to advanced decentralized financial platform.</p>
+                        <ul class="card-features">
+                            <li><i class="fas fa-check-circle"></i> Multi-phase development roadmap</li>
+                            <li><i class="fas fa-check-circle"></i> Multi-currency support</li>
+                            <li><i class="fas fa-check-circle"></i> In-wallet staking capabilities</li>
+                            <li><i class="fas fa-check-circle"></i> AI-driven fraud detection</li>
+                        </ul>
+                        <a href="#" class="btn btn-secondary">Explore Wallet</a>
+                    </div>
+                </div>
+                
+                <div class="ecosystem-card animated">
+                    <div class="card-header">
+                        <h3>Metro Miner</h3>
+                        <p>Powering the MCNS</p>
+                    </div>
+                    <div class="card-body">
+                        <p>The official mining engine powering the Metro Coin Network System, enabling users to earn MTC by participating in the decentralized ecosystem.</p>
+                        <ul class="card-features">
+                            <li><i class="fas fa-check-circle"></i> Fair distribution mechanism</li>
+                            <li><i class="fas fa-check-circle"></i> User-friendly mining experience</li>
+                            <li><i class="fas fa-check-circle"></i> Rewards for early supporters</li>
+                            <li><i class="fas fa-check-circle"></i> Fuels adoption and growth</li>
+                        </ul>
+                        <a href="#" class="btn btn-secondary">Start Mining</a>
+                    </div>
+                </div>
+                
+                <div class="ecosystem-card animated">
+                    <div class="card-header">
+                        <h3>Metro Browser</h3>
+                        <p>Transparency Engine</p>
+                    </div>
+                    <div class="card-body">
+                        <p>A specialized blockchain browser built to allow users to verify transactions, check MTC supply, and gain insights about the Metro ecosystem.</p>
+                        <ul class="card-features">
+                            <li><i class="fas fa-check-circle"></i> Transaction verification</li>
+                            <li><i class="fas fa-check-circle"></i> MTC supply tracking</li>
+                            <li><i class="fas fa-check-circle"></i> Ecosystem insights</li>
+                            <li><i class="fas fa-check-circle"></i> Trust and accountability</li>
+                        </ul>
+                        <a href="#" class="btn btn-secondary">Explore Browser</a>
+                    </div>
+                </div>
+                
+                <div class="ecosystem-card animated">
+                    <div class="card-header">
+                        <h3>Lean Business</h3>
+                        <p>Agent-Driven Expansion</p>
+                    </div>
+                    <div class="card-body">
+                        <p>A unique platform that empowers individuals and organizations to promote and expand the Metro Linkz ecosystem while earning rewards.</p>
+                        <ul class="card-features">
+                            <li><i class="fas fa-check-circle"></i> Agent empowerment tools</li>
+                            <li><i class="fas fa-check-circle"></i> Structured campaigns</li>
+                            <li><i class="fas fa-check-circle"></i> Growth rewards system</li>
+                            <li><i class="fas fa-check-circle"></i> Partnership opportunities</li>
+                        </ul>
+                        <a href="#" class="btn btn-secondary">Become an Agent</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Metro Coin Section -->
+    <section class="section metro-coin" id="metro-coin">
+        <div class="container">
+            <div class="section-title animated">
+                <h2>Metro Coin (MTC)</h2>
+                <p>The exclusive digital currency of the Metro Linkz ecosystem, designed to fuel Africa's digital economy and link the continent to global innovation.</p>
+            </div>
+            
+            <div class="coin-container">
+                <div class="coin-info animated">
+                    <h3>The Power of Digital Currency</h3>
+                    <p>MTC is not just a currency — it's an engine of empowerment, crafted with a fixed, scarce supply designed to create lasting value, similar to Bitcoin's model of scarcity.</p>
+                    <p>With only 21,600,000 MTC ever to exist, each coin is a valuable asset in the growing Metro Linkz ecosystem.</p>
+                    <p>MTC serves as the primary medium of exchange across all Metro Linkz platforms, enabling seamless transactions, staking rewards, and access to premium features.</p>
+                    <div class="hero-buttons">
+                        <a href="#" class="btn btn-primary">Get MTC Now</a>
+                        <a href="#" class="btn btn-secondary">White Paper</a>
+                    </div>
+                </div>
+                
+                <div class="coin-visual animated">
+                    <div class="coin-card">
+                        <h3>MTC Tokenomics</h3>
+                        <div class="coin-stats">
+                            <span class="coin-label">Total Supply</span>
+                            <span class="coin-value">21,600,000 MTC</span>
+                        </div>
+                        <div class="coin-stats">
+                            <span class="coin-label">Launch Price</span>
+                            <span class="coin-value">$0.00555 (₦85)</span>
+                        </div>
+                        <div class="coin-stats">
+                          
+                        </div>
+                        <div class="coin-stats">
+                            <span class="coin-label">Projected Value</span>
+                            <span class="coin-value">$15.00+</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership Section -->
+    <section class="section leadership" id="leadership">
+        <div class="container">
+            <div class="section-title animated">
+                <h2>Our Leadership</h2>
+                <p>Visionary guidance from our founder and president, King Humble Xe</p>
+            </div>
+            
+            <div class="leader-profile">
+                <div class="leader-image animated">
+                    <div class="leader-icon">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                </div>
+                
+                <div class="leader-info animated">
+                    <h3>President King Humble Xe</h3>
+                    <div class="leader-title">Founder, President & Visionary</div>
+                    <p>President King Humble Xe is the foundational force and visionary behind Metro Linkz Inc. His unique leadership style blends profound strategic insight with an unwavering commitment to empowering communities through technology.</p>
+                    <p>As President, he has architected the entire Metro Linkz ecosystem, from the conceptualization of the Metro Coin Network System (MCNS) to the development of advanced cybersecurity solutions.</p>
+                    <div class="leader-quote">
+                        "True innovation must be accessible, user-centric, and designed to elevate everyone it touches. Our mission is to empower the African economy, safeguard the digital age, and lead the world into a secure, decentralized future."
+                    </div>
+                    <p>Under his guidance, Metro Linkz has grown from an ambitious idea into a multi-faceted technology conglomerate poised to make a significant impact on the African continent and the world of digital finance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section" id="faq">
+        <div class="container">
+            <div class="section-title animated">
+                <h2>Frequently Asked Questions</h2>
+                <p>Find answers to common questions about Metro Linkz and our ecosystem</p>
+            </div>
+            
+            <div class="faq-container">
+                <div class="faq-item animated">
+                    <div class="faq-question">
+                        What is Metro Linkz Inc.? <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Metro Linkz Inc. is a next-generation technology company and parent ecosystem powering multiple innovative products, platforms, and services designed to push the boundaries of digital finance, cybersecurity, and technological empowerment. We are headquartered in Lagos with a global vision.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item animated">
+                    <div class="faq-question">
+                        What is Metro Coin (MTC)? <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Metro Coin (MTC) is the exclusive digital currency of the Metro Linkz ecosystem. It has a fixed supply of 21,600,000 coins and serves as the primary medium of exchange across all Metro Linkz platforms. MTC is designed to appreciate in value as adoption increases.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item animated">
+                    <div class="faq-question">
+                        How can I acquire MTC? <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>You can acquire MTC through several methods: participating in the Metro Miner program, completing tasks on Leancnstask, purchasing through authorized exchanges (coming soon), or through our Lean Business agent network.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item animated">
+                    <div class="faq-question">
+                        What makes Metro Linkz different from other tech companies? <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Metro Linkz stands out through our comprehensive ecosystem approach, combining financial technology with advanced cybersecurity. We focus on both empowering users financially and securing their digital assets, with a specific mission to drive technological adoption across Africa.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item animated">
+                    <div class="faq-question">
+                        How does Metro Wallet ensure security? <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Metro Wallet employs multiple security layers including military-grade encryption, multi-signature technology, biometric authentication, and AI-driven fraud detection. The wallet will evolve through several versions, with V4.5.0 offering next-gen decentralized security protocols.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item animated">
+                    <div class="faq-question">
+                        How can I become part of the Lean Business program? <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>To join our Lean Business agent network, you can apply through our official website. The program provides tools, training, and rewards for individuals and organizations interested in promoting Metro Linkz products and expanding our ecosystem.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Metro Linkz</h3>
+                    <p>Linking the future of finance and security through innovative technology and a comprehensive digital ecosystem.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#ecosystem">Our Ecosystem</a></li>
+                        <li><a href="#metro-coin">Metro Coin</a></li>
+                        <li><a href="#leadership">Leadership</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Products</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Leancnstask</a></li>
+                        <li><a href="#">Metro Wallet</a></li>
+                        <li><a href="#">Metro Miner</a></li>
+                        <li><a href="#">Metro Browser</a></li>
+                        <li><a href="#">Lean Business</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> Lagos, Nigeria</li>
+                        <li><i class="fas fa-envelope"></i> info@metrolinkz.com</li>
+                        <li><i class="fas fa-phone"></i> +234 800 000 0000</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Metro Linkz Inc. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Track which elements have been animated
+        const animatedElements = {
+            stats: false
+        };
+        
+        // Navigation and scroll effects
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+            
+            // Animate elements on scroll
+            const elements = document.querySelectorAll('.animated');
+            elements.forEach(element => {
+                const elementPosition = element.getBoundingClientRect().top;
+                const screenPosition = window.innerHeight / 1.3;
+                if (elementPosition < screenPosition) {
+                    element.classList.add('visible');
+                }
+            });
+            
+            // Animate stats only once
+            const aboutSection = document.getElementById('about');
+            if (aboutSection && window.scrollY > aboutSection.offsetTop - 500 && !animatedElements.stats) {
+                animateCounter('stat1', 5, 0, 1500);
+                animateCounter('stat2', 21.6, 0, 1500, true);
+                animateCounter('stat3', 100, 0, 1500);
+                animateCounter('stat4', 2023, 2020, 1500);
+                animatedElements.stats = true;
+            }
+        });
+        
+        // Mobile menu toggle
+        document.getElementById('mobile-toggle').addEventListener('click', function() {
+            document.getElementById('menu').classList.toggle('active');
+        });
+        
+        // FAQ accordion
+        const faqQuestions = document.querySelectorAll('.faq-question');
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                answer.classList.toggle('open');
+                
+                const icon = question.querySelector('i');
+                if (answer.classList.contains('open')) {
+                    icon.classList.remove('fa-chevron-down');
+                    icon.classList.add('fa-chevron-up');
+                } else {
+                    icon.classList.remove('fa-chevron-up');
+                    icon.classList.add('fa-chevron-down');
+                }
+            });
+        });
+        
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    document.getElementById('menu').classList.remove('active');
+                }
+            });
+        });
+        
+        // Counter animation function
+        function animateCounter(id, end, start, duration, isDecimal = false) {
+            let obj = document.getElementById(id);
+            if (!obj) return;
+            
+            let range = end - start;
+            let current = start;
+            let increment = end > start ? 1 : -1;
+            let stepTime = Math.abs(Math.floor(duration / range));
+            let timer = setInterval(function() {
+                current += increment;
+                if (isDecimal) {
+                    obj.innerHTML = current.toFixed(1) + 'M';
+                } else {
+                    obj.innerHTML = Math.floor(current);
+                }
+                if ((increment > 0 && current >= end) || (increment < 0 && current <= end)) {
+                    if (isDecimal) {
+                        obj.innerHTML = end.toFixed(1) + 'M';
+                    } else {
+                        obj.innerHTML = end;
+                    }
+                    clearInterval(timer);
+                }
+            }, stepTime);
+        }
+        
+        // Initialize animations on page load
+        window.addEventListener('load', function() {
+            const heroElements = document.querySelectorAll('.hero h1, .hero p, .hero-buttons');
+            heroElements.forEach((element, index) => {
+                element.style.animationDelay = (index * 0.3) + 's';
+                element.classList.add('animated', 'visible');
+            });
+            
+            // Initialize stat2 with 0
+            document.getElementById('stat2').innerHTML = '0';
+        });
+    </script>
+</body>
+</html>
