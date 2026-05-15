@@ -1,1543 +1,637 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-site-verification" content="CZlf1qhvrTPCXVstW7gy3ZDHjG5x-RHisbmJxANDga0" />
-    <meta name="google-site-verification" content="H3dCYSJLQKopmD-iHV29cwakQJFwsaAiDpErNYz-uL0" />
-    
-    <!-- SEO Optimizations -->
-    <meta name="description" content="Metro Linkz Corp - Africa's premier technology ecosystem redefining digital finance, AI systems, and economic infrastructure. Creator of MCNS and Metro Coin.">
-    <meta name="keywords" content="Metro Linkz, MCNS, Metro Coin, Africa technology, digital economy, Token6 ledger, African fintech, King Humble, JNRX">
-    <meta name="author" content="Metro Linkz Corporation">
-    <meta property="og:title" content="Metro Linkz Corp | Building Africa's Digital Future">
-    <meta property="og:description" content="Advanced technology ecosystem powering Africa's digital economy through integrated systems and innovative financial infrastructure.">
+    <title>Metro Linkz Corp | Engineering Interconnected Infrastructure for the Next Digital Era</title>
+    <meta name="description" content="Metro Linkz Corp is a next-generation technology holding corporation building interconnected digital ecosystems, intelligent infrastructure, and advanced security-driven technologies. Powering MCNS, Metro Coin, Metro Wallet, Metro Pay, founded by King Humble XE.">
+    <meta name="keywords" content="Metro Linkz, MCNS, Metro Coin, MTC, Metro Wallet, Metro Pay, Metro Browser, Metro Miner, MCNS Angel Network, Azure Gadget, Global Konnect Business, King Humble XE, JNRX, MSTC, Token6, MetroScript, Xnet9, digital infrastructure, emerging economies, secured infrastructure">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="author" content="Metro Linkz Corp">
+    <!-- Google Site Verification -->
+    <meta name="google-site-verification" content="CZlf1qhvrTPCXVstW7gy3ZDHjG5x-RHisbmJxANDga0">
+    <meta name="google-site-verification" content="H3dCYSJLQKopmD-iHV29cwakQJFwsaAiDpErNYz-uL0">
+    <link rel="canonical" href="https://metrolinkz.com/">
+    <meta property="og:title" content="Metro Linkz Corp | Interconnected Infrastructure for the Next Digital Era">
+    <meta property="og:description" content="Building MCNS, Metro Coin, Metro Wallet, and intelligent ecosystems for emerging economies. Founded by King Humble XE.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://metrolinkz.com">
-    
-    <title>Metro Linkz Corp | Advanced Technology Ecosystem for Africa's Digital Economy</title>
-    
-    <!-- Professional Fonts -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
+    <meta property="og:url" content="https://metrolinkz.com/">
+    <meta property="og:image" content="https://metrolinkz.com/og-image.jpg">
+    <meta property="og:site_name" content="Metro Linkz Corp">
+    <meta property="og:locale" content="en_US">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Metro Linkz Corp | Interconnected Digital Infrastructure">
+    <meta name="twitter:description" content="Engineering interconnected infrastructure: MCNS, Metro Coin, Metro Wallet. Founded by King Humble XE.">
+    <meta name="twitter:image" content="https://metrolinkz.com/twitter-image.jpg">
+    <meta name="theme-color" content="#000000">
+
+    <!-- Space Grotesk Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome (reliable, minimalist icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
     <style>
         :root {
-            --primary: #0A192F; /* Deep Navy - Professional & Trustworthy */
-            --secondary: #112240; /* Dark Blue - Sophisticated */
-            --accent: #64FFDA; /* Teal - Modern & Tech */
-            --light: #F8F9FA; /* Clean White */
-            --text: #8892B0; /* Muted Text */
-            --text-dark: #CCD6F6; /* Light Text on Dark */
-            --border: #233554; /* Border Color */
-            --card-bg: #112240; /* Card Background */
-            --shadow: 0 10px 30px rgba(2, 12, 27, 0.2);
-            --transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            --bg-primary: #000000;
+            --bg-secondary: #0a0a0a;
+            --bg-tertiary: #111111;
+            --bg-card: #0d0d0d;
+            --bg-glass: rgba(14, 14, 14, 0.8);
+            --text-primary: #ffffff;
+            --text-secondary: #b0b0b0;
+            --text-tertiary: #707070;
+            --accent: #4A7FB5;
+            --accent-glow: rgba(74, 127, 181, 0.2);
+            --accent-matte: #3d6da0;
+            --border-subtle: rgba(255, 255, 255, 0.08);
+            --border-medium: rgba(255, 255, 255, 0.14);
+            --border-accent: rgba(74, 127, 181, 0.4);
+            --glass-blur: blur(28px);
+            --glass-border: rgba(255, 255, 255, 0.1);
+            --shadow-glow: 0 0 60px rgba(255, 255, 255, 0.04);
+            --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.4);
+            --gradient-hero: radial-gradient(ellipse at 50% 30%, rgba(74, 127, 181, 0.08) 0%, transparent 70%);
+            --btn-primary-bg: #ffffff;
+            --btn-primary-text: #000000;
+            --btn-primary-hover-shadow: 0 12px 28px rgba(255, 255, 255, 0.1);
+            --badge-bg: rgba(74, 127, 181, 0.12);
+            --badge-text: #7aafdd;
+            --dot-color: rgba(255, 255, 255, 0.025);
+            --nav-bg: rgba(0, 0, 0, 0.85);
+            --dropdown-bg: rgba(10, 10, 10, 0.8);
+            --toggle-bg: #1a1a1a;
+            --toggle-dot: #ffffff;
+            --section-divider: rgba(255, 255, 255, 0.04);
+            --faq-bg: rgba(255, 255, 255, 0.02);
+            --faq-border: rgba(255, 255, 255, 0.06);
+            --code-bg: rgba(255, 255, 255, 0.03);
         }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+
+        [data-theme="light"] {
+            --bg-primary: #ffffff;
+            --bg-secondary: #f7f8fa;
+            --bg-tertiary: #f0f1f3;
+            --bg-card: #fcfcfd;
+            --bg-glass: rgba(255, 255, 255, 0.8);
+            --text-primary: #000000;
+            --text-secondary: #3d3d3d;
+            --text-tertiary: #6b6b6b;
+            --accent: #3a6da5;
+            --accent-glow: rgba(58, 109, 165, 0.15);
+            --accent-matte: #305d8f;
+            --border-subtle: rgba(0, 0, 0, 0.06);
+            --border-medium: rgba(0, 0, 0, 0.12);
+            --border-accent: rgba(58, 109, 165, 0.35);
+            --glass-blur: blur(24px);
+            --glass-border: rgba(0, 0, 0, 0.1);
+            --shadow-glow: 0 0 40px rgba(0,0,0,0.04);
+            --shadow-card: 0 1px 3px rgba(0, 0, 0, 0.06);
+            --gradient-hero: radial-gradient(ellipse at 50% 30%, rgba(58, 109, 165, 0.06) 0%, transparent 70%);
+            --btn-primary-bg: #000000;
+            --btn-primary-text: #ffffff;
+            --btn-primary-hover-shadow: 0 12px 28px rgba(0,0,0,0.08);
+            --badge-bg: rgba(58, 109, 165, 0.08);
+            --badge-text: #2e5685;
+            --dot-color: rgba(0, 0, 0, 0.02);
+            --nav-bg: rgba(255, 255, 255, 0.88);
+            --dropdown-bg: rgba(255, 255, 255, 0.82);
+            --toggle-bg: #e8e8e8;
+            --toggle-dot: #000000;
+            --section-divider: rgba(0, 0, 0, 0.05);
+            --faq-bg: rgba(0, 0, 0, 0.015);
+            --faq-border: rgba(0, 0, 0, 0.06);
+            --code-bg: rgba(0, 0, 0, 0.025);
         }
-        
-        html {
-            scroll-behavior: smooth;
-            scroll-padding-top: 80px;
-        }
-        
+
+        * { margin:0; padding:0; box-sizing:border-box; }
+        html { scroll-behavior: smooth; font-size: 16px; }
         body {
-            font-family: 'Inter', sans-serif;
-            color: var(--text);
-            background-color: #0A192F;
+            font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
             line-height: 1.6;
+            transition: background-color 0.5s ease, color 0.5s ease;
             overflow-x: hidden;
-            font-weight: 400;
-        }
-        
-        h1, h2, h3, h4, h5, h6 {
-            font-family: 'Outfit', sans-serif;
-            font-weight: 700;
-            color: var(--text-dark);
-            line-height: 1.2;
-        }
-        
-        .container {
-            width: 100%;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        
-        .section {
-            padding: 100px 0;
-        }
-        
-        /* Professional Header */
-        header {
-            background: rgba(10, 25, 47, 0.95);
-            backdrop-filter: blur(10px);
-            position: fixed;
-            width: 100%;
-            z-index: 1000;
-            border-bottom: 1px solid rgba(35, 53, 84, 0.3);
-            padding: 20px 0;
-            transition: var(--transition);
-        }
-        
-        .header-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        .logo {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            text-decoration: none;
-        }
-        
-        .logo-icon {
-            width: 40px;
-            height: 40px;
-            background: var(--accent);
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--primary);
-            font-weight: 800;
-            font-size: 18px;
-        }
-        
-        .logo-text {
-            font-family: 'Outfit', sans-serif;
-            font-size: 1.5rem;
-            font-weight: 800;
-            color: var(--text-dark);
-        }
-        
-        .logo-text span {
-            color: var(--accent);
-        }
-        
-        /* Professional Navigation */
-        nav ul {
-            display: flex;
-            list-style: none;
-            gap: 40px;
-            align-items: center;
-        }
-        
-        nav ul li a {
-            color: var(--text);
-            text-decoration: none;
-            font-weight: 500;
-            font-size: 0.95rem;
-            transition: var(--transition);
             position: relative;
-        }
-        
-        nav ul li a:hover {
-            color: var(--accent);
-        }
-        
-        nav ul li a.active {
-            color: var(--accent);
-        }
-        
-        nav ul li a.active::after {
-            content: '';
-            position: absolute;
-            bottom: -5px;
-            left: 0;
-            width: 100%;
-            height: 2px;
-            background: var(--accent);
-        }
-        
-        .nav-cta {
-            background: transparent;
-            color: var(--accent) !important;
-            padding: 10px 24px;
-            border: 1px solid var(--accent);
-            border-radius: 4px;
-            font-weight: 500 !important;
-            transition: var(--transition);
-        }
-        
-        .nav-cta:hover {
-            background: rgba(100, 255, 218, 0.1);
-            transform: translateY(-2px);
-        }
-        
-        .mobile-toggle {
-            display: none;
-            background: none;
-            border: none;
-            color: var(--text-dark);
-            font-size: 1.5rem;
-            cursor: pointer;
-            padding: 8px;
-        }
-        
-        /* Sophisticated Hero Section */
-        .hero {
-            background: linear-gradient(180deg, #0A192F 0%, #0D1B32 100%);
-            padding: 160px 0 100px;
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            right: -30%;
-            width: 800px;
-            height: 800px;
-            background: radial-gradient(circle, rgba(100, 255, 218, 0.1) 0%, rgba(100, 255, 218, 0) 70%);
-            z-index: 1;
-        }
-        
-        .hero-content {
-            position: relative;
-            z-index: 2;
-            max-width: 800px;
-        }
-        
-        .hero h1 {
-            font-size: 3.5rem;
-            margin-bottom: 1.5rem;
-            line-height: 1.1;
-        }
-        
-        .hero h1 span {
-            color: var(--accent);
-        }
-        
-        .hero-subtitle {
-            font-size: 1.2rem;
-            color: var(--text);
-            margin-bottom: 2.5rem;
-            max-width: 600px;
-            line-height: 1.7;
-        }
-        
-        .hero-buttons {
-            display: flex;
-            gap: 20px;
-            margin-top: 3rem;
-        }
-        
-        .btn {
-            padding: 14px 32px;
-            border-radius: 4px;
-            text-decoration: none;
-            font-weight: 500;
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            transition: var(--transition);
-            border: none;
-            cursor: pointer;
-            font-size: 0.95rem;
-            font-family: 'Inter', sans-serif;
-        }
-        
-        .btn-primary {
-            background: var(--accent);
-            color: var(--primary);
-        }
-        
-        .btn-primary:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 30px rgba(100, 255, 218, 0.3);
-        }
-        
-        .btn-secondary {
-            background: transparent;
-            color: var(--accent);
-            border: 1px solid var(--accent);
-        }
-        
-        .btn-secondary:hover {
-            background: rgba(100, 255, 218, 0.1);
-            transform: translateY(-3px);
-        }
-        
-        /* Professional Stats */
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 30px;
-            margin-top: 80px;
-            padding: 40px;
-            background: rgba(17, 34, 64, 0.5);
-            border: 1px solid rgba(35, 53, 84, 0.3);
-            border-radius: 8px;
-        }
-        
-        .stat-item {
-            text-align: center;
-        }
-        
-        .stat-number {
-            font-size: 2.5rem;
-            font-weight: 800;
-            color: var(--accent);
-            margin-bottom: 8px;
-            font-family: 'Outfit', sans-serif;
-        }
-        
-        .stat-label {
-            font-size: 0.9rem;
-            color: var(--text);
-            font-weight: 500;
-        }
-        
-        /* Section Titles */
-        .section-title {
-            margin-bottom: 60px;
-        }
-        
-        .section-title .tag {
-            display: inline-block;
-            color: var(--accent);
-            font-size: 0.9rem;
-            font-weight: 500;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            margin-bottom: 15px;
-        }
-        
-        .section-title h2 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-        }
-        
-        .section-title .subtitle {
-            font-size: 1.1rem;
-            color: var(--text);
-            max-width: 600px;
-            line-height: 1.7;
-        }
-        
-        /* MCNS Ecosystem */
-        .ecosystem-section {
-            background: #0D1B32;
-        }
-        
-        .ecosystem-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 30px;
-        }
-        
-        .ecosystem-card {
-            background: var(--card-bg);
-            border: 1px solid rgba(35, 53, 84, 0.3);
-            border-radius: 8px;
-            overflow: hidden;
-            transition: var(--transition);
-            height: 100%;
-        }
-        
-        .ecosystem-card:hover {
-            transform: translateY(-5px);
-            border-color: var(--accent);
-        }
-        
-        .card-header {
-            padding: 30px 30px 20px;
-            border-bottom: 1px solid rgba(35, 53, 84, 0.3);
-        }
-        
-        .card-icon {
-            width: 50px;
-            height: 50px;
-            background: rgba(100, 255, 218, 0.1);
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 20px;
-            color: var(--accent);
-            font-size: 1.3rem;
-        }
-        
-        .card-header h3 {
-            font-size: 1.5rem;
-            margin-bottom: 10px;
-        }
-        
-        .card-subtitle {
-            color: var(--accent);
-            font-size: 0.95rem;
-            font-weight: 500;
-        }
-        
-        .card-body {
-            padding: 30px;
-        }
-        
-        .card-body p {
-            margin-bottom: 25px;
-            line-height: 1.7;
-        }
-        
-        .card-features {
-            list-style: none;
-            margin-bottom: 25px;
-        }
-        
-        .card-features li {
-            margin-bottom: 12px;
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-        
-        .card-features li i {
-            color: var(--accent);
-            font-size: 0.9rem;
-        }
-        
-        /* Metro Coin Section */
-        .metro-coin-section {
-            background: #0A192F;
-        }
-        
-        .coin-container {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 60px;
-            align-items: center;
-        }
-        
-        .coin-info h3 {
-            font-size: 2rem;
-            margin-bottom: 1.5rem;
-        }
-        
-        .token6-badge {
-            display: inline-block;
-            background: rgba(100, 255, 218, 0.1);
-            color: var(--accent);
-            padding: 6px 16px;
-            border-radius: 4px;
-            font-weight: 600;
-            font-size: 0.9rem;
-            margin-bottom: 20px;
-            border: 1px solid rgba(100, 255, 218, 0.3);
-        }
-        
-        .coin-visual {
-            position: relative;
-        }
-        
-        .coin-card {
-            background: var(--card-bg);
-            border: 1px solid rgba(35, 53, 84, 0.3);
-            border-radius: 8px;
-            padding: 40px;
-        }
-        
-        .coin-card h3 {
-            text-align: center;
-            font-size: 1.8rem;
-            margin-bottom: 30px;
-        }
-        
-        .coin-stats {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 20px;
-            padding-bottom: 20px;
-            border-bottom: 1px solid rgba(35, 53, 84, 0.3);
-        }
-        
-        .coin-stats:last-child {
-            border-bottom: none;
-            margin-bottom: 0;
-        }
-        
-        .coin-label {
-            font-weight: 500;
-        }
-        
-        .coin-value {
-            font-weight: 600;
-            color: var(--accent);
-        }
-        
-        /* Leadership Section */
-        .leadership-section {
-            background: #0D1B32;
-        }
-        
-        .leadership-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-            gap: 50px;
-            margin-top: 60px;
-        }
-        
-        .leader-card {
-            background: var(--card-bg);
-            border: 1px solid rgba(35, 53, 84, 0.3);
-            border-radius: 8px;
-            overflow: hidden;
-            transition: var(--transition);
-        }
-        
-        .leader-card:hover {
-            transform: translateY(-5px);
-            border-color: var(--accent);
-        }
-        
-        .leader-header {
-            padding: 40px 40px 30px;
-            text-align: center;
-            position: relative;
-        }
-        
-        .leader-profile-container {
-            position: relative;
-            width: 150px;
-            height: 150px;
-            margin: 0 auto 25px;
-        }
-        
-        .leader-profile {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            background: linear-gradient(135deg, #0A192F 0%, #112240 100%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .leader-profile::before {
-            content: '';
-            position: absolute;
-            width: 160px;
-            height: 160px;
-            background: conic-gradient(from 0deg, var(--accent), transparent, var(--accent));
-            animation: rotate 4s linear infinite;
-        }
-        
-        .leader-profile::after {
-            content: '';
-            position: absolute;
-            width: 140px;
-            height: 140px;
-            background: var(--card-bg);
-            border-radius: 50%;
-        }
-        
-        .profile-initial {
-            position: relative;
-            z-index: 2;
-            color: var(--accent);
-            font-size: 3rem;
-            font-weight: 800;
-            font-family: 'Outfit', sans-serif;
-        }
-        
-        .leader-info {
-            position: relative;
-            z-index: 2;
-        }
-        
-        .leader-name {
-            font-size: 1.8rem;
-            margin-bottom: 5px;
-        }
-        
-        .leader-title {
-            color: var(--accent);
-            font-size: 1.1rem;
-            margin-bottom: 15px;
-            font-weight: 500;
-        }
-        
-        .leader-networth {
-            display: inline-block;
-            background: rgba(100, 255, 218, 0.1);
-            color: var(--accent);
-            padding: 6px 16px;
-            border-radius: 4px;
-            font-weight: 600;
-            font-size: 0.9rem;
-            border: 1px solid rgba(100, 255, 218, 0.3);
-        }
-        
-        .leader-body {
-            padding: 0 40px 40px;
-        }
-        
-        .leader-quote {
-            font-style: italic;
-            padding: 25px;
-            background: rgba(100, 255, 218, 0.05);
-            border-radius: 8px;
-            margin: 25px 0;
-            border-left: 3px solid var(--accent);
-            line-height: 1.7;
-        }
-        
-        /* Team Section */
-        .team-section {
-            background: #0A192F;
-        }
-        
-        .team-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-            margin-top: 60px;
-        }
-        
-        .team-card {
-            text-align: center;
-            padding: 30px;
-            background: var(--card-bg);
-            border: 1px solid rgba(35, 53, 84, 0.3);
-            border-radius: 8px;
-            transition: var(--transition);
-        }
-        
-        .team-card:hover {
-            transform: translateY(-5px);
-            border-color: var(--accent);
-        }
-        
-        .team-icon {
-            width: 70px;
-            height: 70px;
-            background: rgba(100, 255, 218, 0.1);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 20px;
-            color: var(--accent);
-            font-size: 1.8rem;
-        }
-        
-        .team-card h4 {
-            margin-bottom: 10px;
-            font-size: 1.3rem;
-        }
-        
-        /* FAQ Section */
-        .faq-section {
-            background: #0D1B32;
-        }
-        
-        .faq-container {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        
-        .faq-item {
-            margin-bottom: 15px;
-            background: var(--card-bg);
-            border: 1px solid rgba(35, 53, 84, 0.3);
-            border-radius: 8px;
-            overflow: hidden;
-            transition: var(--transition);
-        }
-        
-        .faq-item:hover {
-            border-color: rgba(100, 255, 218, 0.3);
-        }
-        
-        .faq-question {
-            padding: 25px 30px;
-            cursor: pointer;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            font-weight: 600;
-            font-size: 1.1rem;
-            color: var(--text-dark);
-        }
-        
-        .faq-question i {
-            color: var(--accent);
-            transition: transform 0.3s ease;
-        }
-        
-        .faq-answer {
-            padding: 0 30px;
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.3s ease, padding 0.3s ease;
-            line-height: 1.7;
-        }
-        
-        .faq-answer.open {
-            padding: 0 30px 25px;
-            max-height: 300px;
-        }
-        
-        /* Footer */
-        footer {
-            background: #0A192F;
-            border-top: 1px solid rgba(35, 53, 84, 0.3);
-            padding: 80px 0 40px;
-        }
-        
-        .footer-content {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 50px;
-            margin-bottom: 60px;
-        }
-        
-        .footer-column h3 {
-            font-size: 1.3rem;
-            margin-bottom: 25px;
-        }
-        
-        .footer-column p {
-            margin-bottom: 25px;
-            line-height: 1.7;
-        }
-        
-        .footer-links {
-            list-style: none;
-        }
-        
-        .footer-links li {
-            margin-bottom: 12px;
-        }
-        
-        .footer-links a {
-            color: var(--text);
-            text-decoration: none;
-            transition: var(--transition);
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-        
-        .footer-links a:hover {
-            color: var(--accent);
-            transform: translateX(5px);
-        }
-        
-        .footer-social {
-            display: flex;
-            gap: 15px;
-            margin-top: 25px;
-        }
-        
-        .footer-social a {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 40px;
-            height: 40px;
-            background: rgba(35, 53, 84, 0.3);
-            border-radius: 4px;
-            color: var(--text);
-            transition: var(--transition);
-        }
-        
-        .footer-social a:hover {
-            background: var(--accent);
-            color: var(--primary);
-            transform: translateY(-3px);
-        }
-        
-        .footer-bottom {
-            text-align: center;
-            padding-top: 40px;
-            border-top: 1px solid rgba(35, 53, 84, 0.3);
-        }
-        
-        .footer-bottom p {
-            color: var(--text);
-            font-size: 0.9rem;
-        }
-        
-        /* Animations */
-        @keyframes rotate {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-        
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        
-        .animated {
-            animation: fadeIn 0.6s ease-out forwards;
-        }
-        
-        /* Responsive Design */
-        @media (max-width: 1024px) {
-            .hero h1 { font-size: 3rem; }
-            .section-title h2 { font-size: 2.2rem; }
-            .leadership-grid { grid-template-columns: 1fr; }
-        }
-        
-        @media (max-width: 768px) {
-            .container { padding: 0 15px; }
-            .section { padding: 80px 0; }
-            
-            .hero { padding: 140px 0 80px; }
-            .hero h1 { font-size: 2.5rem; }
-            .hero-subtitle { font-size: 1.1rem; }
-            
-            nav ul {
-                display: none;
-                position: fixed;
-                top: 80px;
-                left: 0;
-                width: 100%;
-                background: var(--secondary);
-                flex-direction: column;
-                padding: 20px;
-                gap: 0;
-                border-bottom: 1px solid rgba(35, 53, 84, 0.3);
-                z-index: 1000;
-            }
-            
-            nav ul.active {
-                display: flex;
-            }
-            
-            nav ul li {
-                width: 100%;
-                margin: 0;
-            }
-            
-            nav ul li a {
-                display: block;
-                padding: 15px 20px;
-                border-radius: 4px;
-            }
-            
-            nav ul li a:hover {
-                background: rgba(100, 255, 218, 0.1);
-            }
-            
-            .mobile-toggle {
-                display: block;
-            }
-            
-            .hero-buttons {
-                flex-direction: column;
-                gap: 15px;
-            }
-            
-            .stats-grid {
-                grid-template-columns: repeat(2, 1fr);
-                padding: 30px 20px;
-                gap: 20px;
-            }
-            
-            .coin-container {
-                grid-template-columns: 1fr;
-                gap: 40px;
-            }
-            
-            .ecosystem-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .team-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-        
-        @media (max-width: 480px) {
-            .hero h1 { font-size: 2rem; }
-            .section-title h2 { font-size: 1.8rem; }
-            .stats-grid { grid-template-columns: 1fr; }
-            .team-grid { grid-template-columns: 1fr; }
-            .leadership-grid { grid-template-columns: 1fr; }
-            .footer-content { grid-template-columns: 1fr; }
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .bg-grid {
+            position: fixed; top:0; left:0; width:100vw; height:100vh; pointer-events:none; z-index:0;
+            background-image: linear-gradient(var(--dot-color) 1px, transparent 1px), linear-gradient(90deg, var(--dot-color) 1px, transparent 1px);
+            background-size: 60px 60px; animation: gridShift 30s linear infinite;
+        }
+        @keyframes gridShift { 0%,100%{ transform:translate(0,0); } 33%{ transform:translate(-2px,-1px); } 66%{ transform:translate(1px,-2px); } }
+        .ambient-orb { position:fixed; pointer-events:none; z-index:0; border-radius:50%; filter:blur(160px); opacity:0.22; }
+        .ambient-orb.orb-1 { width:600px; height:600px; top:-200px; right:-150px; background:var(--accent-glow); animation:orbFloat 20s infinite; }
+        .ambient-orb.orb-2 { width:450px; height:450px; bottom:-180px; left:-120px; background:rgba(74,127,181,0.12); animation:orbFloat 24s -10s infinite; }
+        @keyframes orbFloat { 0%,100%{ transform:translate(0,0) scale(1); } 20%{ transform:translate(40px,-30px) scale(1.08); } 40%{ transform:translate(-25px,-55px) scale(0.94); } 60%{ transform:translate(-50px,20px) scale(1.04); } 80%{ transform:translate(30px,40px) scale(0.96); } }
+
+        .site-wrapper { position:relative; z-index:1; }
+
+        /* Navigation */
+        .nav-container { position:fixed; top:0; left:0; right:0; z-index:1000; padding:0.75rem 1.5rem; transition:all 0.4s ease; }
+        .nav-container.scrolled { background:var(--nav-bg); backdrop-filter:var(--glass-blur); -webkit-backdrop-filter:var(--glass-blur); border-bottom:1px solid var(--border-subtle); }
+        .nav-inner { max-width:1300px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; gap:1.5rem; }
+        .nav-logo { display:flex; align-items:center; gap:0.5rem; text-decoration:none; color:var(--text-primary); z-index:1001; }
+        .nav-logo img { height:36px; width:auto; display:block; }
+
+        .nav-links { display:flex; align-items:center; gap:0.25rem; list-style:none; }
+        .nav-links>li>a, .nav-links>li>button { display:flex; align-items:center; gap:0.35rem; padding:0.55rem 0.9rem; color:var(--text-secondary); text-decoration:none; font-size:0.9rem; font-weight:500; border-radius:8px; transition:all 0.25s; background:none; border:none; cursor:pointer; font-family:inherit; }
+        .nav-links>li>a:hover, .nav-links>li>button:hover { color:var(--text-primary); background:rgba(255,255,255,0.04); }
+        [data-theme="light"] .nav-links>li>a:hover, [data-theme="light"] .nav-links>li>button:hover { background:rgba(0,0,0,0.04); }
+
+        .nav-dropdown { position:absolute; top:calc(100% + 8px); left:50%; transform:translateX(-50%) translateY(8px); background:var(--dropdown-bg); backdrop-filter:var(--glass-blur); -webkit-backdrop-filter:var(--glass-blur); border:1px solid var(--glass-border); border-radius:16px; padding:0.6rem; min-width:240px; opacity:0; visibility:hidden; pointer-events:none; transition:all 0.3s ease; box-shadow:0 20px 50px rgba(0,0,0,0.5); z-index:999; }
+        [data-theme="light"] .nav-dropdown { box-shadow:0 20px 50px rgba(0,0,0,0.08); }
+        .nav-links>li:hover>.nav-dropdown { opacity:1; visibility:visible; pointer-events:auto; transform:translateX(-50%) translateY(0); }
+        .nav-dropdown li a { display:flex; align-items:center; gap:0.5rem; padding:0.6rem 0.9rem; color:var(--text-secondary); text-decoration:none; font-size:0.85rem; border-radius:10px; transition:0.2s; }
+        .nav-dropdown li a:hover { color:var(--text-primary); background:rgba(255,255,255,0.05); }
+
+        .theme-toggle { width:42px; height:42px; border-radius:50%; border:1px solid var(--border-medium); background:var(--toggle-bg); cursor:pointer; color:var(--text-primary); font-size:1.1rem; transition:0.3s; display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+        .theme-toggle:hover { border-color:var(--accent); }
+        [data-theme="dark"] .theme-toggle .icon-sun { display:none; }
+        [data-theme="light"] .theme-toggle .icon-moon { display:none; }
+
+        .mobile-menu-btn { display:none; flex-direction:column; gap:5px; cursor:pointer; background:none; border:none; padding:8px; }
+        .mobile-menu-btn span { width:26px; height:2px; background:var(--text-primary); border-radius:2px; transition:0.3s; }
+        .mobile-menu-btn.active span:nth-child(1) { transform:rotate(45deg) translate(5px,5px); }
+        .mobile-menu-btn.active span:nth-child(2) { opacity:0; }
+        .mobile-menu-btn.active span:nth-child(3) { transform:rotate(-45deg) translate(5px,-5px); }
+
+        .mobile-menu { display:none; position:fixed; top:0; right:-100%; width:85%; max-width:400px; height:100vh; background:var(--bg-glass); backdrop-filter:var(--glass-blur); border-left:1px solid var(--glass-border); z-index:999; padding:5rem 1.5rem 2rem; transition:right 0.4s ease; overflow-y:auto; }
+        .mobile-menu.open { right:0; }
+        .mobile-menu a, .mobile-menu .mobile-dropdown-trigger { display:flex; align-items:center; gap:0.5rem; padding:0.8rem 1rem; color:var(--text-primary); text-decoration:none; font-size:1rem; border-radius:10px; background:none; border:none; cursor:pointer; width:100%; text-align:left; font-family:inherit; }
+        .mobile-submenu { list-style:none; padding-left:1.2rem; max-height:0; overflow:hidden; transition:max-height 0.4s; }
+        .mobile-submenu.open { max-height:500px; }
+        .mobile-overlay { display:none; position:fixed; inset:0; background:rgba(0,0,0,0.5); z-index:998; }
+        .mobile-overlay.active { display:block; }
+
+        /* Hero */
+        .hero { position:relative; min-height:100vh; display:flex; align-items:center; justify-content:center; text-align:center; padding:8rem 1.5rem 5rem; background:var(--gradient-hero); }
+        .hero-content { max-width:900px; }
+        .hero-badge { display:inline-flex; align-items:center; gap:0.4rem; background:var(--badge-bg); color:var(--badge-text); padding:0.45rem 1.1rem; border-radius:50px; font-size:0.8rem; font-weight:600; letter-spacing:0.04em; text-transform:uppercase; margin-bottom:1.5rem; border:1px solid var(--border-accent); animation:fadeInUp 0.8s forwards; }
+        .hero-title { font-size:clamp(2.6rem, 6vw, 5rem); font-weight:700; letter-spacing:-0.03em; line-height:1.08; margin-bottom:1.2rem; animation:fadeInUp 0.8s 0.1s forwards; opacity:0; background:linear-gradient(135deg, #fff 0%, #a0c4e8 50%, #fff 100%); background-size:200% auto; -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; animation:shimmerText 4s ease-in-out infinite; }
+        @keyframes shimmerText { 0%,100%{ background-position:0% center; } 50%{ background-position:100% center; } }
+        .hero-subtitle { font-size:clamp(1.05rem, 2vw, 1.25rem); color:var(--text-secondary); max-width:700px; margin:0 auto 2.5rem; animation:fadeInUp 0.8s 0.2s forwards; opacity:0; }
+        .hero-cta-group { display:flex; flex-wrap:wrap; gap:1rem; justify-content:center; animation:fadeInUp 0.8s 0.3s forwards; opacity:0; }
+        .btn { display:inline-flex; align-items:center; gap:0.5rem; padding:0.85rem 1.8rem; border-radius:50px; font-weight:600; font-size:0.9rem; letter-spacing:-0.01em; text-decoration:none; cursor:pointer; transition:all 0.35s; border:none; }
+        .btn-primary { background:var(--btn-primary-bg); color:var(--btn-primary-text); box-shadow:0 8px 20px rgba(0,0,0,0.08); }
+        .btn-primary:hover { transform:translateY(-2px); box-shadow:var(--btn-primary-hover-shadow); }
+        .btn-outline { background:transparent; color:var(--text-primary); border:1px solid var(--border-medium); }
+        .btn-outline:hover { border-color:var(--accent); background:rgba(255,255,255,0.02); }
+
+        @keyframes fadeInUp { from{ opacity:0; transform:translateY(28px); } to{ opacity:1; transform:translateY(0); } }
+
+        /* Sections */
+        .section { padding:6rem 1.5rem; position:relative; z-index:1; }
+        .section-inner { max-width:1100px; margin:0 auto; }
+        .section-label { display:inline-flex; align-items:center; gap:0.4rem; font-size:0.78rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--accent-matte); margin-bottom:0.8rem; }
+        .section-title { font-size:clamp(2rem, 4vw, 3.2rem); font-weight:700; letter-spacing:-0.03em; line-height:1.15; margin-bottom:1rem; }
+        .section-desc { color:var(--text-secondary); font-size:1.1rem; max-width:700px; margin-bottom:2.5rem; }
+        .divider { width:100%; height:1px; background:var(--section-divider); margin:4rem 0; }
+        .cards-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:1.25rem; }
+        .card { background:var(--bg-card); border:1px solid var(--border-subtle); border-radius:20px; padding:2rem; transition:all 0.4s ease; position:relative; }
+        .card:hover { transform:translateY(-4px); box-shadow:var(--shadow-glow); border-color:var(--border-accent); }
+        .card-icon { width:48px; height:48px; border-radius:14px; background:var(--badge-bg); display:flex; align-items:center; justify-content:center; font-size:1.4rem; color:var(--accent); margin-bottom:1.2rem; }
+        .card h3 { font-weight:600; letter-spacing:-0.02em; margin-bottom:0.5rem; }
+        .card p { color:var(--text-secondary); font-size:0.9rem; line-height:1.6; }
+
+        .highlight-box { background:var(--bg-tertiary); border:1px solid var(--border-subtle); border-radius:20px; padding:2.5rem; position:relative; }
+        .spec-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(180px, 1fr)); gap:1rem; }
+        .spec-item { background:var(--bg-card); border:1px solid var(--border-subtle); border-radius:14px; padding:1.4rem; text-align:center; }
+        .spec-value { font-size:1.6rem; font-weight:700; color:var(--accent); }
+        .spec-label { font-size:0.8rem; color:var(--text-tertiary); text-transform:uppercase; letter-spacing:0.05em; }
+
+        .faq-list { display:flex; flex-direction:column; gap:0.6rem; }
+        .faq-item { background:var(--faq-bg); border:1px solid var(--faq-border); border-radius:14px; overflow:hidden; transition:0.3s; }
+        .faq-item.open { border-color:var(--border-accent); box-shadow:0 0 20px var(--accent-glow); }
+        .faq-question { width:100%; display:flex; justify-content:space-between; align-items:center; gap:1rem; padding:1.2rem 1.5rem; background:none; border:none; cursor:pointer; font-weight:600; font-size:1rem; color:var(--text-primary); text-align:left; }
+        .faq-icon { font-size:1.2rem; color:var(--accent); transition:transform 0.35s; }
+        .faq-item.open .faq-icon { transform:rotate(180deg); }
+        .faq-answer { max-height:0; overflow:hidden; transition:max-height 0.45s ease; }
+        .faq-answer-inner { padding:0 1.5rem 1.3rem; color:var(--text-secondary); font-size:0.9rem; line-height:1.7; }
+
+        .site-footer { border-top:1px solid var(--section-divider); padding:3rem 1.5rem; text-align:center; color:var(--text-tertiary); font-size:0.85rem; }
+
+        .reveal { opacity:0; transform:translateY(36px); transition:opacity 0.8s ease, transform 0.8s ease; }
+        .reveal.visible { opacity:1; transform:translateY(0); }
+
+        .leader-img { width:100px; height:100px; border-radius:50%; object-fit:cover; background:var(--border-subtle); margin:0 auto 1rem; display:block; border:2px solid var(--border-medium); }
+
+        @media (max-width:1024px) {
+            .nav-links { display:none; }
+            .mobile-menu-btn { display:flex; }
+            .mobile-menu { display:block; }
+            .theme-toggle.desktop-only { display:none; }
+        }
+        @media (max-width:768px) {
+            .hero { padding:5rem 1rem 3rem; min-height:auto; }
+            .section { padding:3rem 1rem; }
+            .cards-grid { grid-template-columns:1fr; }
+            .spec-grid { grid-template-columns:1fr 1fr; }
+        }
+        @media (max-width:480px) {
+            .spec-grid { grid-template-columns:1fr; }
+            .hero-cta-group { flex-direction:column; align-items:center; }
         }
     </style>
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Metro Linkz Corp",
+            "url": "https://metrolinkz.com/",
+            "description": "A next-generation technology holding corporation building interconnected digital ecosystems, intelligent infrastructure, and advanced security-driven technologies.",
+            "founder": { "@type": "Person", "name": "King Humble XE", "jobTitle": "President & CTO" }
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                { "@type": "Question", "name": "What is Metro Linkz Corp?", "acceptedAnswer": { "@type": "Answer", "text": "Metro Linkz Corp is a technology holding company building interconnected digital systems for finance, AI, commerce, security, and digital infrastructure. It operates multiple ecosystems under one unified structure." } },
+                { "@type": "Question", "name": "What is MCNS?", "acceptedAnswer": { "@type": "Answer", "text": "MCNS is the core ecosystem of Metro Linkz Corp. It connects all internal systems including payments, identity, commerce, business tools, and growth platforms into one digital economy infrastructure." } },
+                { "@type": "Question", "name": "What is Metro Coin (MTC) and its total supply?", "acceptedAnswer": { "@type": "Answer", "text": "Metro Coin (MTC) is the digital value asset powering MCNS for payments, rewards, and ecosystem transactions. Total supply: 125,600,000 MTC, current price $0.07, built on Token6 infrastructure." } },
+                { "@type": "Question", "name": "Who founded Metro Linkz Corp?", "acceptedAnswer": { "@type": "Answer", "text": "Metro Linkz Corp was founded by King Humble XE, who also serves as President and CTO of MCNS." } },
+                { "@type": "Question", "name": "What companies are under Metro Linkz?", "acceptedAnswer": { "@type": "Answer", "text": "Key systems include MCNS, Metro Pay, Metro Wallet, Metro Browser, Lean Business, Metro Miner, MCNS Angel Network, Azure Gadget, Global Konnect Business, MSTC, Turn Up, Random Technologies, Garmai, and PlayBox Ultimate." } },
+                { "@type": "Question", "name": "What is the long-term vision of Metro Linkz?", "acceptedAnswer": { "@type": "Answer", "text": "To build a global digital infrastructure ecosystem that connects finance, AI, commerce, and digital work into one unified system powering real economic growth." } },
+                { "@type": "Question", "name": "Is Metro Linkz a crypto company?", "acceptedAnswer": { "@type": "Answer", "text": "No. It is a technology infrastructure company using its own internal digital value system for ecosystem utility." } },
+                { "@type": "Question", "name": "How does MCNS generate value?", "acceptedAnswer": { "@type": "Answer", "text": "Through real usage across payments, business services, commerce, workforce systems, and ecosystem adoption." } },
+                { "@type": "Question", "name": "Can developers build on MCNS?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. MCNS is designed to support businesses and developers building on its infrastructure." } }
+            ]
+        }
+    </script>
 </head>
-<body>
-    <!-- Header -->
-    <header id="header">
-        <div class="container header-container">
-            <a href="#home" class="logo">
-                <div class="logo-icon">M</div>
-                <div class="logo-text">Metro<span>Linkz</span></div>
+<body data-theme="dark">
+    <div class="bg-grid" aria-hidden="true"></div>
+    <div class="ambient-orb orb-1" aria-hidden="true"></div>
+    <div class="ambient-orb orb-2" aria-hidden="true"></div>
+
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+    <nav class="mobile-menu" id="mobileMenu">
+        <a href="#hero" onclick="closeMobileMenu()">Home</a>
+        <a href="#about" onclick="closeMobileMenu()">About</a>
+        <a href="#vision" onclick="closeMobileMenu()">Vision</a>
+        <button class="mobile-dropdown-trigger" onclick="toggleMobileSubmenu(this)">Ecosystem <i class="fa-solid fa-caret-down"></i></button>
+        <ul class="mobile-submenu"><li><a href="#mcns" onclick="closeMobileMenu()">MCNS</a></li><li><a href="#products" onclick="closeMobileMenu()">MCNS Products</a></li></ul>
+        <a href="#leadership" onclick="closeMobileMenu()">Leadership</a>
+        <a href="#faq" onclick="closeMobileMenu()">FAQ</a>
+        <button class="theme-toggle" onclick="toggleTheme()" style="margin:1rem auto;"><i class="fa-solid fa-sun icon-sun"></i><i class="fa-solid fa-moon icon-moon"></i></button>
+    </nav>
+
+    <header class="nav-container" id="navContainer">
+        <div class="nav-inner">
+            <a href="#hero" class="nav-logo">
+                <!-- Replace with your logo: <img src="YOUR_LOGO_PATH" alt="Metro Linkz"> -->
+                <img src="" alt="Metro Linkz" style="height:36px; display:none;" id="navLogoImg">
             </a>
-            
-            <nav>
-                <ul id="menu">
-                    <li><a href="#home" class="active">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#ecosystem">MCNS</a></li>
-                    <li><a href="#metro-coin">Metro Coin</a></li>
-                    <li><a href="#leadership">Leadership</a></li>
-                    <li><a href="#team">Team</a></li>
-                    <li><a href="#contact" class="nav-cta">Join Ecosystem</a></li>
-                </ul>
-            </nav>
-            
-            <button class="mobile-toggle" id="mobile-toggle">
-                <i class="fas fa-bars"></i>
-            </button>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#vision">Vision</a></li>
+                <li><button>Ecosystem <i class="fa-solid fa-caret-down"></i></button>
+                    <ul class="nav-dropdown">
+                        <li><a href="#mcns"><i class="fa-solid fa-circle-nodes"></i> MCNS</a></li>
+                        <li><a href="#products"><i class="fa-solid fa-cubes"></i> MCNS Products</a></li>
+                        <li><a href="#tokenomics"><i class="fa-solid fa-chart-bar"></i> Tokenomics</a></li>
+                    </ul>
+                </li>
+                <li><a href="#leadership">Leadership</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+            <button class="theme-toggle desktop-only" onclick="toggleTheme()"><i class="fa-solid fa-sun icon-sun"></i><i class="fa-solid fa-moon icon-moon"></i></button>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" onclick="toggleMobileMenu()"><span></span><span></span><span></span></button>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="container">
-            <div class="hero-content animated">
-                <h1>Building <span>Africa's Digital Future</span></h1>
-                <p class="hero-subtitle">Metro Linkz Corp is a next-generation technology ecosystem engineered to transform how Africa connects, transacts, and secures digital value through integrated AI systems, advanced digital currency, and next-gen infrastructure.</p>
-                
-                <div class="hero-buttons">
-                    <a href="#metro-coin" class="btn btn-primary">
-                        <i class="fas fa-coins"></i> Explore Metro Coin
-                    </a>
-                    <a href="#ecosystem" class="btn btn-secondary">
-                        <i class="fas fa-rocket"></i> Discover MCNS
-                    </a>
+    <main class="site-wrapper">
+        <!-- HERO -->
+        <section class="hero" id="hero">
+            <div class="hero-content">
+                <span class="hero-badge"><i class="fa-solid fa-globe"></i> Next-Generation Infrastructure</span>
+                <h1 class="hero-title">Engineering Interconnected Infrastructure for the Next Digital Era</h1>
+                <p class="hero-subtitle">Metro Linkz Corp builds intelligent, secure digital ecosystems powering MCNS, Metro Coin, Metro Wallet, and the future of emerging economies.</p>
+                <div class="hero-cta-group">
+                    <a href="#about" class="btn btn-primary"><i class="fa-solid fa-arrow-down"></i> Discover Metro Linkz</a>
+                    <a href="#mcns" class="btn btn-outline"><i class="fa-solid fa-circle-nodes"></i> Explore MCNS</a>
                 </div>
             </div>
-            
-            <div class="stats-grid">
-                <div class="stat-item animated">
-                    <div class="stat-number" id="stat1">6</div>
-                    <div class="stat-label">Integrated Platforms</div>
-                </div>
-                <div class="stat-item animated">
-                    <div class="stat-number" id="stat2">30.6M</div>
-                    <div class="stat-label">MTC Total Supply</div>
-                </div>
-                <div class="stat-item animated">
-                    <div class="stat-number" id="stat3">$11.5M</div>
-                    <div class="stat-label">MCNS Valuation</div>
-                </div>
-                <div class="stat-item animated">
-                    <div class="stat-number" id="stat4">2024</div>
-                    <div class="stat-label">Global Expansion</div>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- About Section -->
-    <section class="section" id="about">
-        <div class="container">
-            <div class="section-title animated">
-                <div class="tag">Corporate Overview</div>
-                <h2>The Metro Linkz Vision</h2>
-                <p class="subtitle">We're building a digital empire architected to reshape how Africa interacts with global finance, AI, cloud systems, and digital work infrastructure.</p>
+        <!-- ABOUT -->
+        <section class="section" id="about">
+            <div class="section-inner">
+                <span class="section-label reveal"><i class="fa-solid fa-building"></i> About Metro Linkz Corp</span>
+                <h2 class="section-title reveal">Building the Next Generation of Secured Digital Infrastructure</h2>
+                <div class="reveal">
+                    <p style="font-size:1.1rem; color:var(--text-secondary); margin-bottom:1.5rem;">Metro Linkz Corp is a next-generation technology holding corporation architected to build interconnected digital ecosystems, intelligent infrastructure, and advanced security-driven technologies designed for the future of emerging economies.</p>
+                    <p style="color:var(--text-secondary); margin-bottom:1.5rem;">Built with a vision far beyond traditional startups, Metro Linkz operates as a high-level infrastructure ecosystem focused on solving problems at scale through deeply connected systems spanning finance, AI, cloud infrastructure, digital workforces, security technologies, creator economies, commerce, and intelligent operating networks.</p>
+                    <p style="color:var(--text-secondary); margin-bottom:1.5rem;">At its core, Metro Linkz exists to empower unity, economic participation, digital ownership, and secure technological growth by building systems capable of supporting millions of users across multiple sectors through one interconnected infrastructure layer.</p>
+                    <p style="color:var(--text-secondary); margin-bottom:1.5rem;">As technology evolves globally, Metro Linkz believes security infrastructure must evolve alongside it. The corporation is focused on building secure, scalable, and future-oriented digital systems capable of powering the next era of economic coordination, intelligent automation, and digital interaction.</p>
+                    <p style="color:var(--text-secondary);">Unlike conventional startups that focus on a single application or service, Metro Linkz is engineered as a multi-layered ecosystem corporation — a structure designed to create, operate, connect, and scale multiple independent but strategically linked systems under one unified infrastructure architecture.</p>
+                </div>
             </div>
-            
-            <div class="about-content animated">
-                <p>Metro Linkz Corp serves as the parent company behind the Metro Coin Network System (MCNS) — Africa's largest interconnected ecosystem designed to power the continent's digital transformation.</p>
-                <p>We combine artificial intelligence, high-level digital currency, advanced software infrastructure, intelligent mobile hardware, and a complete economic ecosystem to deliver a future where Africans participate fully in the global digital landscape — not as consumers, but as creators, owners, and pioneers of innovation.</p>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- MCNS Ecosystem -->
-    <section class="section ecosystem-section" id="ecosystem">
-        <div class="container">
-            <div class="section-title animated">
-                <div class="tag">The Ecosystem</div>
-                <h2>MCNS Platform Network</h2>
-                <p class="subtitle">Six tightly integrated platforms powering Africa's digital economy</p>
-            </div>
-            
-            <div class="ecosystem-grid">
-                <!-- Lean Business -->
-                <div class="ecosystem-card animated">
-                    <div class="card-header">
-                        <div class="card-icon">
-                            <i class="fas fa-briefcase"></i>
-                        </div>
-                        <h3>Lean Business</h3>
-                        <p class="card-subtitle">Adoption Engine of MCNS</p>
-                    </div>
-                    <div class="card-body">
-                        <p>The economic engine empowering young Africans as trained agents to execute marketing tasks that directly fuel MCNS growth.</p>
-                        <ul class="card-features">
-                            <li><i class="fas fa-check"></i> Youth-driven digital workforce</li>
-                            <li><i class="fas fa-check"></i> Structured marketing campaigns</li>
-                            <li><i class="fas fa-check"></i> Agent empowerment system</li>
-                            <li><i class="fas fa-check"></i> Direct MCNS growth mechanism</li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <!-- Leancnstask -->
-                <div class="ecosystem-card animated">
-                    <div class="card-header">
-                        <div class="card-icon">
-                            <i class="fas fa-tasks"></i>
-                        </div>
-                        <h3>Leancnstask</h3>
-                        <p class="card-subtitle">Task-Based Platform</p>
-                    </div>
-                    <div class="card-body">
-                        <p>The first saga of Metro Coin, releasing 20% of total MTC supply through task-based rewards and skill-based payments.</p>
-                        <ul class="card-features">
-                            <li><i class="fas fa-check"></i> Task rewards system</li>
-                            <li><i class="fas fa-check"></i> Skill-based payments</li>
-                            <li><i class="fas fa-check"></i> MTC earning platform</li>
-                            <li><i class="fas fa-check"></i> Direct wallet integration</li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <!-- Metro Wallet -->
-                <div class="ecosystem-card animated">
-                    <div class="card-header">
-                        <div class="card-icon">
-                            <i class="fas fa-wallet"></i>
-                        </div>
-                        <h3>Metro Wallet</h3>
-                        <p class="card-subtitle">Financial Identity</p>
-                    </div>
-                    <div class="card-body">
-                        <p>The official wallet for Metro Coin storage, MCNS payments, withdrawals, and internal ecosystem transactions.</p>
-                        <ul class="card-features">
-                            <li><i class="fas fa-check"></i> Secure MTC storage</li>
-                            <li><i class="fas fa-check"></i> MCNS payment hub</li>
-                            <li><i class="fas fa-check"></i> Instant withdrawal system</li>
-                            <li><i class="fas fa-check"></i> Metro Pay integration</li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <!-- Metro Pay -->
-                <div class="ecosystem-card animated">
-                    <div class="card-header">
-                        <div class="card-icon">
-                            <i class="fas fa-credit-card"></i>
-                        </div>
-                        <h3>Metro Pay</h3>
-                        <p class="card-subtitle">Payment Infrastructure</p>
-                    </div>
-                    <div class="card-body">
-                        <p>Next-generation fintech payment engine handling Naira and MTC transactions, agent payouts, and merchant services.</p>
-                        <ul class="card-features">
-                            <li><i class="fas fa-check"></i> Naira & MTC payments</li>
-                            <li><i class="fas fa-check"></i> Agent payout system</li>
-                            <li><i class="fas fa-check"></i> Self-powered engine</li>
-                            <li><i class="fas fa-check"></i> Revenue share model</li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <!-- Metro Miner -->
-                <div class="ecosystem-card animated">
-                    <div class="card-header">
-                        <div class="card-icon">
-                            <i class="fas fa-hard-hat"></i>
-                        </div>
-                        <h3>Metro Miner</h3>
-                        <p class="card-subtitle">Mining Infrastructure</p>
-                    </div>
-                    <div class="card-body">
-                        <p>Enables users to earn Metro Coin through node-based mining and ecosystem participation while maintaining value backing.</p>
-                        <ul class="card-features">
-                            <li><i class="fas fa-check"></i> Node-based mining</li>
-                            <li><i class="fas fa-check"></i> Ecosystem participation</li>
-                            <li><i class="fas fa-check"></i> Fair distribution</li>
-                            <li><i class="fas fa-check"></i> Value preservation</li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <!-- Metro Browser -->
-                <div class="ecosystem-card animated">
-                    <div class="card-header">
-                        <div class="card-icon">
-                            <i class="fas fa-search"></i>
-                        </div>
-                        <h3>Metro Browser</h3>
-                        <p class="card-subtitle">KYC & Research Tool</p>
-                    </div>
-                    <div class="card-body">
-                        <p>Dual-purpose tool for KYC verification and research access to MCNS documentation, ensuring security and transparency.</p>
-                        <ul class="card-features">
-                            <li><i class="fas fa-check"></i> KYC verification</li>
-                            <li><i class="fas fa-check"></i> Research documentation</li>
-                            <li><i class="fas fa-check"></i> Official MCNS browser</li>
-                            <li><i class="fas fa-check"></i> Security & transparency</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Metro Coin Section -->
-    <section class="section metro-coin-section" id="metro-coin">
-        <div class="container">
-            <div class="section-title animated">
-                <div class="tag">Digital Currency</div>
-                <h2>Metro Coin (MTC)</h2>
-                <p class="subtitle">Proprietary digital currency powering the MCNS ecosystem</p>
-            </div>
-            
-            <div class="coin-container">
-                <div class="coin-info animated">
-                    <div class="token6-badge">TOKEN6 LEDGER SYSTEM</div>
-                    <h3>Not Blockchain. Not Crypto.<br>Advanced Digital Value Ledger.</h3>
-                    <p>Metro Coin operates on Token6 — Metro Linkz's proprietary digital value ledger designed for speed, security, and zero external blockchain dependency.</p>
-                    <p>With a fixed supply of 30.6 million coins, MTC is built to appreciate significantly as adoption increases across Africa's growing digital infrastructure.</p>
-                    
-                    <div class="hero-buttons" style="margin-top: 40px;">
-                        <a href="#" class="btn btn-primary">
-                            <i class="fas fa-shopping-cart"></i> Acquire MTC
-                        </a>
-                        <a href="#" class="btn btn-secondary">
-                            <i class="fas fa-file-alt"></i> Technical Specifications
-                        </a>
-                    </div>
-                </div>
-                
-                <div class="coin-visual animated">
-                    <div class="coin-card">
-                        <h3>MTC Tokenomics</h3>
-                        
-                        <div class="coin-stats">
-                            <span class="coin-label">Total Supply</span>
-                            <span class="coin-value">30,600,000 MTC</span>
-                        </div>
-                        
-                        <div class="coin-stats">
-                            <span class="coin-label">Current Price</span>
-                            <span class="coin-value">₦100 (≈ $0.07)</span>
-                        </div>
-                        
-                        <div class="coin-stats">
-                            <span class="coin-label">Leancnstask Release</span>
-                            <span class="coin-value">20% Supply</span>
-                        </div>
-                        
-                        <div class="coin-stats">
-                            <span class="coin-label">Projected Value</span>
-                            <span class="coin-value">$15+ per MTC</span>
-                        </div>
-                        
-                        <div class="coin-stats">
-                            <span class="coin-label">Technology</span>
-                            <span class="coin-value">Token6 Ledger</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Leadership Section -->
-    <section class="section leadership-section" id="leadership">
-        <div class="container">
-            <div class="section-title animated">
-                <div class="tag">Executive Leadership</div>
-                <h2>Visionary Leadership</h2>
-                <p class="subtitle">Young pioneers transforming Africa's technological landscape</p>
-            </div>
-            
-            <div class="leadership-grid">
-                <!-- President King Humble -->
-                <div class="leader-card animated">
-                    <div class="leader-header">
-                        <div class="leader-profile-container">
-                            <div class="leader-profile">
-                                <div class="profile-initial">K</div>
-                            </div>
-                        </div>
-                        <div class="leader-info">
-                            <h3 class="leader-name">Ezeokoye King Humble</h3>
-                            <div class="leader-title">President of Metro Linkz Corp & CTO of MCNS</div>
-                            <div class="leader-networth">Net Worth: $11.5M (₦9.2 Billion Naira)</div>
-                        </div>
-                    </div>
-                    <div class="leader-body">
-                        <p>At 18 years old, King Humble leads Metro Linkz Corp with a futuristic mindset, deep engineering expertise, and a mission-driven approach focused on transforming Africa's economic landscape.</p>
-                        
-                        <div class="leader-quote">
-                            "True innovation must be accessible, user-centric, and designed to elevate everyone it touches. Our mission is to empower the African economy, safeguard the digital age, and lead the world into a secure, decentralized future."
-                        </div>
-                        
-                        <p>As founder, architect of MCNS, and creator of the Token6 Ledger System, King Humble oversees all technology design, economic strategy, system architecture, and global expansion planning.</p>
-                    </div>
-                </div>
-                
-                <!-- JNRX -->
-                <div class="leader-card animated">
-                    <div class="leader-header">
-                        <div class="leader-profile-container">
-                            <div class="leader-profile">
-                                <div class="profile-initial">J</div>
-                            </div>
-                        </div>
-                        <div class="leader-info">
-                            <h3 class="leader-name">JNRX</h3>
-                            <div class="leader-title">Lead Marketing Officer (LMO)</div>
-                            <div class="leader-networth">Net Worth: $2.3M (₦1.84 Billion Naira)</div>
-                        </div>
-                    </div>
-                    <div class="leader-body">
-                        <p>At 18 years old, JNRX serves as the Senior Marketing Lead working directly alongside King Humble. His innovative approaches have driven MCNS's rapid expansion across Africa.</p>
-                        
-                        <p>He led growth strategies for Lean Business, Leancnstask, community activation, ecosystem awareness, and agent acquisition campaigns that have positioned Metro Linkz Corp as a leading technology ecosystem.</p>
-                        
-                        <p>JNRX's ability to scale digital products and influence adoption has been instrumental in MCNS's market penetration and user acquisition success.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Team Section -->
-    <section class="section team-section" id="team">
-        <div class="container">
-            <div class="section-title animated">
-                <div class="tag">Our Specialists</div>
-                <h2>The Metro Linkz Team</h2>
-                <p class="subtitle">15 elite specialists driving execution across all MCNS projects</p>
-            </div>
-            
-            <div class="team-grid">
-                <div class="team-card animated">
-                    <div class="team-icon">
-                        <i class="fas fa-users"></i>
-                    </div>
-                    <h4>Community Management</h4>
-                    <p>User relations, agent support, growth optimization, and reputation management.</p>
-                </div>
-                
-                <div class="team-card animated">
-                    <div class="team-icon">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <h4>Marketing & Outreach</h4>
-                    <p>Campaign strategies, creative marketing, social amplification, and partnership outreach.</p>
-                </div>
-                
-                <div class="team-card animated">
-                    <div class="team-icon">
-                        <i class="fas fa-code"></i>
-                    </div>
-                    <h4>DevOps & Engineering</h4>
-                    <p>Backend infrastructure, cloud deployment, Token6 ledger reliability, and platform stability.</p>
-                </div>
-                
-                <div class="team-card animated">
-                    <div class="team-icon">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
-                    <h4>QA Testing & Security</h4>
-                    <p>Product testing, transaction verification, UI/UX validation, and security checks.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ Section -->
-    <section class="section faq-section" id="faq">
-        <div class="container">
-            <div class="section-title animated">
-                <div class="tag">Knowledge Base</div>
-                <h2>Frequently Asked Questions</h2>
-                <p class="subtitle">Everything you need to know about Metro Linkz Corp and MCNS</p>
-            </div>
-            
-            <div class="faq-container">
-                <div class="faq-item animated">
-                    <div class="faq-question">
-                        What makes Metro Coin different from cryptocurrency?
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Metro Coin is NOT blockchain-based and NOT a cryptocurrency. It operates on Token6 — Metro Linkz's proprietary digital value ledger designed for speed, security, and zero external blockchain dependency. This gives Metro Linkz Corp full control over the currency while ensuring scalability and stability for Africa's digital economy.</p>
-                    </div>
-                </div>
-                
-                <div class="faq-item animated">
-                    <div class="faq-question">
-                        How can I start earning with Lean Business?
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <p>To join Lean Business, you can apply through our official platform. Successful applicants receive training, tools, and resources to become MCNS agents. You'll execute marketing tasks, build communities, create content, and promote MCNS products — earning rewards through Leancnstask that can be withdrawn via Metro Wallet.</p>
-                    </div>
-                </div>
-                
-                <div class="faq-item animated">
-                    <div class="faq-question">
-                        What is the Token6 Ledger System?
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Token6 is Metro Linkz's proprietary digital value ledger designed specifically for Metro Coin. It provides the speed and security of blockchain technology without the limitations of external blockchain dependencies. Token6 allows for full control, scalability, and customized economic operations tailored to Africa's digital growth needs.</p>
-                    </div>
-                </div>
-                
-                <div class="faq-item animated">
-                    <div class="faq-question">
-                        How does Metro Pay differ from other payment systems?
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Metro Pay is uniquely integrated into the entire MCNS ecosystem. Unlike traditional fintechs that require external user adoption, Metro Pay grows through MCNS platforms, Metro Linkz products, and revenue shares from partner ecosystems. This creates a self-powered financial engine that doesn't depend on VC funding or unstable scaling.</p>
-                    </div>
-                </div>
-                
-                <div class="faq-item animated">
-                    <div class="faq-question">
-                        What is the long-term vision for MCNS?
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <p>MCNS aims to become Africa's dominant digital economy ecosystem, integrating AI, digital currency, fintech, cloud systems, and digital work infrastructure. Our vision is to position Africa as a creator and owner of digital innovation rather than just a consumer, transforming the continent's economic landscape and global technological influence.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer id="contact">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-column animated">
-                    <h3>Metro Linkz Corp</h3>
-                    <p>Redefining Africa's digital economy through integrated AI systems, advanced digital currency, and next-generation technology infrastructure.</p>
-                    <div class="footer-social">
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-telegram"></i></a>
-                    </div>
-                </div>
-                
-                <div class="footer-column animated">
-                    <h3>MCNS Ecosystem</h3>
-                    <ul class="footer-links">
-                        <li><a href="#"><i class="fas fa-arrow-right"></i> Lean Business</a></li>
-                        <li><a href="#"><i class="fas fa-arrow-right"></i> Leancnstask</a></li>
-                        <li><a href="#"><i class="fas fa-arrow-right"></i> Metro Wallet</a></li>
-                        <li><a href="#"><i class="fas fa-arrow-right"></i> Metro Pay</a></li>
-                        <li><a href="#"><i class="fas fa-arrow-right"></i> Metro Miner</a></li>
-                        <li><a href="#"><i class="fas fa-arrow-right"></i> Metro Browser</a></li>
+        <!-- VISION -->
+        <section class="section" id="vision">
+            <div class="section-inner">
+                <span class="section-label reveal"><i class="fa-solid fa-eye"></i> The Metro Linkz Vision</span>
+                <h2 class="section-title reveal">The Metro Linkz Vision</h2>
+                <div class="reveal">
+                    <p style="color:var(--text-secondary); margin-bottom:1.5rem;">Metro Linkz believes the future will not be built through isolated apps alone, but through interconnected infrastructures capable of solving problems across multiple industries simultaneously.</p>
+                    <p style="color:var(--text-secondary); margin-bottom:1.5rem;">The company's long-term mission is to engineer a secured digital operating infrastructure where:</p>
+                    <ul style="color:var(--text-secondary); list-style:none; padding-left:0; margin-bottom:1.5rem; line-height:2;">
+                        <li><i class="fa-solid fa-circle-check" style="color:var(--accent); margin-right:0.5rem;"></i> intelligent systems communicate together,</li>
+                        <li><i class="fa-solid fa-circle-check" style="color:var(--accent); margin-right:0.5rem;"></i> economic systems remain interconnected,</li>
+                        <li><i class="fa-solid fa-circle-check" style="color:var(--accent); margin-right:0.5rem;"></i> digital work becomes more accessible,</li>
+                        <li><i class="fa-solid fa-circle-check" style="color:var(--accent); margin-right:0.5rem;"></i> security evolves alongside technology,</li>
+                        <li><i class="fa-solid fa-circle-check" style="color:var(--accent); margin-right:0.5rem;"></i> and emerging economies gain the infrastructure necessary to compete globally.</li>
                     </ul>
+                    <p style="color:var(--text-secondary); margin-bottom:1.5rem;">Metro Linkz believes Africa represents one of the largest untapped technological opportunities in the world. With one of the youngest and fastest-growing populations globally, the continent requires infrastructure designed specifically for scalability, accessibility, affordability, and long-term economic participation.</p>
+                    <blockquote style="border-left:3px solid var(--accent); padding:1.2rem 1.8rem; background:var(--faq-bg); border-radius:0 12px 12px 0; font-style:italic; color:var(--text-secondary);">
+                        "The founders and early builders of a system should first solve meaningful problems at home before expanding globally."
+                    </blockquote>
+                    <p style="color:var(--text-secondary);">This principle shapes Metro Linkz's focus on building systems designed to improve economic growth, create digital opportunities, reduce unnecessary labor burdens through intelligent technology, and help establish a more empowered digital workforce for future generations.</p>
                 </div>
-                
-                <div class="footer-column animated">
-                    <h3>Company</h3>
-                    <ul class="footer-links">
-                        <li><a href="#about"><i class="fas fa-arrow-right"></i> About Us</a></li>
-                        <li><a href="#leadership"><i class="fas fa-arrow-right"></i> Leadership</a></li>
-                        <li><a href="#team"><i class="fas fa-arrow-right"></i> Our Team</a></li>
-                        <li><a href="#metro-coin"><i class="fas fa-arrow-right"></i> Metro Coin</a></li>
-                        <li><a href="#faq"><i class="fas fa-arrow-right"></i> FAQ</a></li>
-                    </ul>
+            </div>
+        </section>
+
+        <!-- MCNS ECOSYSTEM -->
+        <section class="section" id="mcns">
+            <div class="section-inner">
+                <span class="section-label reveal"><i class="fa-solid fa-circle-nodes"></i> Ecosystem Architecture</span>
+                <h2 class="section-title reveal">MCNS — Metro Coin Network System</h2>
+                <div class="reveal">
+                    <p style="color:var(--text-secondary); margin-bottom:1.5rem;">At the center of Metro Linkz's infrastructure is the Metro Coin Network System (MCNS) — an interconnected ecosystem engineered to coordinate digital payments, workforce systems, digital ownership, economic participation, and infrastructure technologies under one integrated framework.</p>
+                    <p style="color:var(--text-secondary);">MCNS operates as a layered digital economy where multiple systems quietly assist each other while remaining independently scalable. The ecosystem is designed around the belief that solving problems at scale requires coordinated systems across multiple sectors rather than isolated platforms.</p>
                 </div>
-                
-                <div class="footer-column animated">
-                    <h3>Contact</h3>
-                    <ul class="footer-links">
-                        <li><a href="#"><i class="fas fa-map-marker-alt"></i> Lagos, Nigeria HQ</a></li>
-                        <li><a href="mailto:info@metrolinkz.com"><i class="fas fa-envelope"></i> info@metrolinkz.com</a></li>
-                        <li><a href="#"><i class="fas fa-phone"></i> +234 800 000 0000</a></li>
-                        <li><a href="#"><i class="fas fa-globe"></i> www.metrolinkz.com</a></li>
+            </div>
+        </section>
+
+        <!-- CORE ECOSYSTEMS (Metro Coin + MSTC) -->
+        <section class="section">
+            <div class="section-inner">
+                <span class="section-label reveal"><i class="fa-solid fa-cubes"></i> Core Metro Linkz Ecosystems</span>
+                <h2 class="section-title reveal">Core Ecosystems</h2>
+                <div class="cards-grid reveal" style="justify-content:center;">
+                    <div class="card">
+                        <div class="card-icon"><i class="fa-solid fa-coins"></i></div>
+                        <h3>Metro Coin (MTC)</h3>
+                        <p>The native digital value asset powering MCNS. Built on Token6, MetroScript, and Xnet9, MTC is engineered for real-world economic usage: payments, marketplace systems, rewards, workforce compensation, and infrastructure utility — not a speculative crypto asset, but a digital economic coordination layer.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon"><i class="fa-solid fa-shield"></i></div>
+                        <h3>MSTC</h3>
+                        <p>Advanced security and infrastructure technologies focused on digital protection, system integrity, and next-generation secured architecture — ensuring the entire ecosystem remains resilient, trusted, and future-proof.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TOKENOMICS -->
+        <section class="section" id="tokenomics">
+            <div class="section-inner">
+                <span class="section-label reveal"><i class="fa-solid fa-chart-bar"></i> Tokenomics</span>
+                <h2 class="section-title reveal">MTC Technical Structure</h2>
+                <div class="spec-grid reveal">
+                    <div class="spec-item"><div class="spec-value">125,600,000</div><div class="spec-label">Total Supply (MTC)</div></div>
+                    <div class="spec-item"><div class="spec-value">$0.07</div><div class="spec-label">Current Price</div></div>
+                    <div class="spec-item"><div class="spec-value">20%</div><div class="spec-label">Metro Miner First Release</div></div>
+                    <div class="spec-item"><div class="spec-value">Token6, MetroScript, Xnet9</div><div class="spec-label">Infrastructure</div></div>
+                </div>
+                <p style="color:var(--text-secondary); margin-top:1.5rem;" class="reveal">Long-Term Vision: As ecosystem utility, infrastructure adoption, workforce participation, and transaction volume increase across MCNS, Metro Coin will evolve into a globally recognized digital utility asset with real economic integration.</p>
+            </div>
+        </section>
+
+        <!-- ADDITIONAL DIVISIONS -->
+        <section class="section">
+            <div class="section-inner">
+                <span class="section-label reveal"><i class="fa-solid fa-building"></i> Additional Divisions</span>
+                <h2 class="section-title reveal">Metro Linkz Companies & Divisions</h2>
+                <div class="cards-grid reveal">
+                    <div class="card"><div class="card-icon"><i class="fa-solid fa-briefcase"></i></div><h3>BusinessXpress Inc</h3><p>Business and operational infrastructure systems for scalable commercial growth.</p></div>
+                    <div class="card"><div class="card-icon"><i class="fa-solid fa-music"></i></div><h3>Turn Up</h3><p>Creator-driven entertainment and social ecosystem combining music, culture, and digital engagement.</p></div>
+                    <div class="card"><div class="card-icon"><i class="fa-solid fa-microchip"></i></div><h3>Random Technologies</h3><p>Large-scale innovation division building Zapptic Flow, Thursday, TPredMarket, GravityAds, and StreamWorkz.</p></div>
+                    <div class="card"><div class="card-icon"><i class="fa-solid fa-gamepad"></i></div><h3>Garmai Technology</h3><p>Advanced AI-powered game development infrastructure with intelligent development tooling.</p></div>
+                    <div class="card"><div class="card-icon"><i class="fa-solid fa-circle-play"></i></div><h3>PlayBox Ultimate</h3><p>Interactive gaming and entertainment infrastructure for immersive digital experiences.</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MCNS PRODUCT LAYER (8 products) -->
+        <section class="section" id="products">
+            <div class="section-inner">
+                <span class="section-label reveal"><i class="fa-solid fa-layer-group"></i> MCNS Product Layer</span>
+                <h2 class="section-title reveal">Core Economic Systems</h2>
+                <p class="section-desc reveal">MCNS is a unified digital economy infrastructure powered by Metro Linkz, designed to connect payments, identity, commerce, growth, investment, and business creation into one system. Every product reinforces the others.</p>
+                <div class="cards-grid">
+                    <div class="card reveal"><div class="card-icon"><i class="fa-solid fa-credit-card"></i></div><h3>Metro Pay</h3><p>The Economic Transaction Layer — powers MTC transactions, fiat (Naira) payments, merchant payments, agent payouts, and ecosystem settlements.</p></div>
+                    <div class="card reveal"><div class="card-icon"><i class="fa-solid fa-wallet"></i></div><h3>Metro Wallet</h3><p>Digital Financial Identity Layer — secure MTC storage, MCNS account identity, instant transfers, and ecosystem login.</p></div>
+                    <div class="card reveal"><div class="card-icon"><i class="fa-solid fa-globe"></i></div><h3>Metro Browser</h3><p>Trust & Discovery Layer — KYC verification, secure onboarding, compliance gateway, trust scoring, plus ecosystem news.</p></div>
+                    <div class="card reveal"><div class="card-icon"><i class="fa-solid fa-rocket"></i></div><h3>Lean Business</h3><p>Growth & Workforce Engine — transforms users into marketers, agents, and community builders through task-based earning.</p></div>
+                    <div class="card reveal"><div class="card-icon"><i class="fa-solid fa-gem"></i></div><h3>Metro Miner</h3><p>Distribution & Participation Layer — users earn MTC through node participation, ecosystem engagement, and mining rewards.</p></div>
+                    <div class="card reveal"><div class="card-icon"><i class="fa-solid fa-hand-holding-dollar"></i></div><h3>MCNS Angel Network</h3><p>Innovation Capital Layer — funds startups and builders using MCNS infrastructure, turning the ecosystem into a startup creation machine.</p></div>
+                    <div class="card reveal"><div class="card-icon"><i class="fa-solid fa-mobile-screen"></i></div><h3>Azure Gadget</h3><p>Commerce Hardware Layer — exclusive hardware and gadget marketplace supporting MTC payments, bridging digital to physical.</p></div>
+                    <div class="card reveal"><div class="card-icon"><i class="fa-solid fa-briefcase"></i></div><h3>Global Konnect Business</h3><p>Business Creation Engine — ready-made business systems, digital infrastructure stack, and operational tools for rapid launch.</p></div>
+                </div>
+                <div class="highlight-box reveal" style="margin-top:2rem;">
+                    <h3 style="margin-bottom:0.5rem;">MCNS as a Complete Operating System</h3>
+                    <p style="color:var(--text-secondary);">Not a crypto ecosystem or app collection — a unified digital economic infrastructure that powers identity, finance, commerce, growth, and business creation through interconnected technologies.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- INFRASTRUCTURE PHILOSOPHY -->
+        <section class="section">
+            <div class="section-inner">
+                <span class="section-label reveal"><i class="fa-solid fa-lightbulb"></i> Philosophy</span>
+                <h2 class="section-title reveal">Infrastructure Philosophy</h2>
+                <div class="reveal">
+                    <p style="color:var(--text-secondary); margin-bottom:1.5rem;">Metro Linkz defines "future infrastructure" as systems built in layers — interconnected pillars capable of supporting multiple industries, economies, technologies, and digital experiences simultaneously.</p>
+                    <ul style="color:var(--text-secondary); list-style:none; padding-left:0; line-height:2;">
+                        <li><i class="fa-solid fa-circle-check" style="color:var(--accent); margin-right:0.5rem;"></i> AI should assist human productivity rather than replace human purpose</li>
+                        <li><i class="fa-solid fa-circle-check" style="color:var(--accent); margin-right:0.5rem;"></i> intelligent systems should reduce unnecessary workload</li>
+                        <li><i class="fa-solid fa-circle-check" style="color:var(--accent); margin-right:0.5rem;"></i> infrastructure should remain scalable and secure</li>
+                        <li><i class="fa-solid fa-circle-check" style="color:var(--accent); margin-right:0.5rem;"></i> digital economies should empower ownership, participation, and accessibility</li>
                     </ul>
                 </div>
             </div>
-            
-            <div class="footer-bottom animated">
-                <p>&copy; 2025 Metro Linkz Corporation. All rights reserved. MCNS is a registered ecosystem of Metro Linkz Corp.</p>
+        </section>
+
+        <!-- LEADERSHIP -->
+        <section class="section" id="leadership">
+            <div class="section-inner">
+                <span class="section-label reveal"><i class="fa-solid fa-crown"></i> Leadership</span>
+                <h2 class="section-title reveal">Leadership & Structure</h2>
+                <div class="cards-grid reveal" style="margin-top:2rem;">
+                    <div class="card" style="text-align:center;">
+                        <!-- Placeholder for King Humble XE image: replace src -->
+                        <img src="" alt="King Humble XE" class="leader-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="card-icon" style="display:none; margin:0 auto 1rem; width:100px; height:100px; border-radius:50%; font-size:2rem;"><i class="fa-solid fa-crown"></i></div>
+                        <h3>King Humble XE</h3>
+                        <p style="color:var(--accent-matte); font-weight:600;">President of Metro Linkz Corp & CTO of MCNS</p>
+                        <p style="font-size:0.9rem;">Founder, visionary architect, and systems strategist. Leads ecosystem architecture, technology direction, and future expansion strategy.</p>
+                        <a href="#" class="btn btn-outline" style="margin-top:1rem; font-size:0.8rem;">Official Founder Site</a>
+                    </div>
+                    <div class="card" style="text-align:center;">
+                        <img src="" alt="JNRX" class="leader-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="card-icon" style="display:none; margin:0 auto 1rem; width:100px; height:100px; border-radius:50%; font-size:2rem;"><i class="fa-solid fa-chart-line"></i></div>
+                        <h3>JNRX</h3>
+                        <p style="color:var(--accent-matte); font-weight:600;">Lead Marketing Officer (LMO)</p>
+                        <p style="font-size:0.9rem;">Leads growth strategy, marketing operations, adoption systems, and ecosystem expansion across all Metro Linkz projects.</p>
+                        <a href="#" class="btn btn-outline" style="margin-top:1rem; font-size:0.8rem;">Official JNRX Site</a>
+                    </div>
+                </div>
+                <div class="highlight-box reveal" style="margin-top:2rem;">
+                    <h3>Organizational Structure</h3>
+                    <p style="color:var(--text-secondary);">President of Metro Linkz Corp · Metro Squad (Core Operational Team) · Prime Governo (Strategic Operations Layer) · Ecosystem Specialists · Infrastructure Teams · Growth & Security Divisions — emphasizing collaborative building and long-term scalability.</p>
+                </div>
             </div>
-        </div>
+        </section>
+
+        <!-- DESIGN PHILOSOPHY -->
+        <section class="section">
+            <div class="section-inner">
+                <span class="section-label reveal"><i class="fa-solid fa-paint-brush"></i> Design & Product Philosophy</span>
+                <h2 class="section-title reveal">Design & Product Philosophy</h2>
+                <blockquote style="border-left:3px solid var(--accent); padding:1.2rem 1.8rem; background:var(--faq-bg); border-radius:0 12px 12px 0; font-style:italic; color:var(--text-secondary);" class="reveal">
+                    "If the product fails to communicate simplicity, premium quality, and clear purpose during first interaction, it has failed."
+                </blockquote>
+                <p style="color:var(--text-secondary);" class="reveal">This philosophy shapes UI/UX systems, onboarding experiences, infrastructure architecture, ecosystem integration, and product scalability decisions.</p>
+            </div>
+        </section>
+
+        <!-- LONG-TERM GOAL -->
+        <section class="section">
+            <div class="section-inner">
+                <span class="section-label reveal"><i class="fa-solid fa-bullseye"></i> The Long-Term Goal</span>
+                <h2 class="section-title reveal">The Long-Term Goal</h2>
+                <div class="reveal">
+                    <p style="color:var(--text-secondary); margin-bottom:1.5rem;">Metro Linkz is ultimately building toward a future where:</p>
+                    <ul style="color:var(--text-secondary); list-style:none; padding-left:0; line-height:2;">
+                        <li><i class="fa-solid fa-circle-check" style="color:var(--accent); margin-right:0.5rem;"></i> digital economies become more accessible,</li>
+                        <li><i class="fa-solid fa-circle-check" style="color:var(--accent); margin-right:0.5rem;"></i> intelligent infrastructure reduces operational friction,</li>
+                        <li><i class="fa-solid fa-circle-check" style="color:var(--accent); margin-right:0.5rem;"></i> African innovation scales globally,</li>
+                        <li><i class="fa-solid fa-circle-check" style="color:var(--accent); margin-right:0.5rem;"></i> and interconnected systems coordinate economic activity securely at massive scale.</li>
+                    </ul>
+                    <p style="color:var(--text-secondary);">The company's mission is not simply to build products — it is to build infrastructure capable of shaping the next generation of digital interaction, economic participation, and technological growth across Africa and beyond.</p>
+                    <p style="color:var(--text-primary); font-weight:600; margin-top:1.5rem;">Metro Linkz Corp — Engineering interconnected infrastructure for the next digital era.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="section" id="faq">
+            <div class="section-inner">
+                <span class="section-label reveal"><i class="fa-solid fa-question"></i> FAQ</span>
+                <h2 class="section-title reveal">Frequently Asked</h2>
+                <div class="faq-list reveal">
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFAQ(this)">What is Metro Linkz Corp? <i class="fa-solid fa-caret-down faq-icon"></i></button>
+                        <div class="faq-answer"><div class="faq-answer-inner">Metro Linkz Corp is a technology holding company building interconnected digital systems for finance, AI, commerce, security, and digital infrastructure. It operates multiple ecosystems under one unified structure.</div></div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFAQ(this)">What is MCNS? <i class="fa-solid fa-caret-down faq-icon"></i></button>
+                        <div class="faq-answer"><div class="faq-answer-inner">MCNS is the core ecosystem of Metro Linkz Corp. It connects all internal systems including payments, identity, commerce, business tools, and growth platforms into one digital economy infrastructure.</div></div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFAQ(this)">What is Metro Coin (MTC) and its total supply? <i class="fa-solid fa-caret-down faq-icon"></i></button>
+                        <div class="faq-answer"><div class="faq-answer-inner">Metro Coin (MTC) is the digital value asset powering MCNS for payments, rewards, and ecosystem transactions. Total Supply: 125,600,000 MTC, Current Price: $0.07, Built on Token6 infrastructure.</div></div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFAQ(this)">Who founded Metro Linkz Corp? <i class="fa-solid fa-caret-down faq-icon"></i></button>
+                        <div class="faq-answer"><div class="faq-answer-inner">Metro Linkz Corp was founded by King Humble XE, who also serves as President and CTO of MCNS.</div></div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFAQ(this)">What companies are under Metro Linkz? <i class="fa-solid fa-caret-down faq-icon"></i></button>
+                        <div class="faq-answer"><div class="faq-answer-inner">Key systems include MCNS, Metro Pay, Metro Wallet, Metro Browser, Lean Business, Metro Miner, MCNS Angel Network, Azure Gadget, Global Konnect Business, MSTC, Turn Up, Random Technologies, Garmai, and PlayBox Ultimate.</div></div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFAQ(this)">What is the long-term vision of Metro Linkz? <i class="fa-solid fa-caret-down faq-icon"></i></button>
+                        <div class="faq-answer"><div class="faq-answer-inner">To build a global digital infrastructure ecosystem that connects finance, AI, commerce, and digital work into one unified system powering real economic growth.</div></div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFAQ(this)">Is Metro Linkz a crypto company? <i class="fa-solid fa-caret-down faq-icon"></i></button>
+                        <div class="faq-answer"><div class="faq-answer-inner">No. It is a technology infrastructure company using its own internal digital value system for ecosystem utility.</div></div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFAQ(this)">How does MCNS generate value? <i class="fa-solid fa-caret-down faq-icon"></i></button>
+                        <div class="faq-answer"><div class="faq-answer-inner">Through real usage across payments, business services, commerce, workforce systems, and ecosystem adoption.</div></div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFAQ(this)">Can developers build on MCNS? <i class="fa-solid fa-caret-down faq-icon"></i></button>
+                        <div class="faq-answer"><div class="faq-answer-inner">Yes. MCNS is designed to support businesses and developers building on its infrastructure.</div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="section-inner"><p><strong>Metro Linkz Corp</strong> — Engineering interconnected infrastructure for the next digital era.</p><p>&copy; <span id="currentYear"></span> Metro Linkz Corp.</p></div>
     </footer>
 
     <script>
-        // Professional Navigation System
-        const header = document.getElementById('header');
-        const mobileToggle = document.getElementById('mobile-toggle');
-        const menu = document.getElementById('menu');
-        const navLinks = document.querySelectorAll('nav a');
-        
-        // Header scroll effect
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 50) {
-                header.style.padding = '15px 0';
-                header.style.backdropFilter = 'blur(15px)';
-            } else {
-                header.style.padding = '20px 0';
-                header.style.backdropFilter = 'blur(10px)';
-            }
-            
-            // Update active nav link based on scroll position
-            let current = '';
-            const sections = document.querySelectorAll('section');
-            
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                const sectionHeight = section.clientHeight;
-                if (scrollY >= (sectionTop - 200)) {
-                    current = section.getAttribute('id');
-                }
-            });
-            
-            navLinks.forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href') === `#${current}`) {
-                    link.classList.add('active');
-                }
-            });
-        });
-        
-        // Mobile menu toggle
-        mobileToggle.addEventListener('click', () => {
-            menu.classList.toggle('active');
-            mobileToggle.innerHTML = menu.classList.contains('active') 
-                ? '<i class="fas fa-times"></i>' 
-                : '<i class="fas fa-bars"></i>';
-        });
-        
-        // Close menu on link click
-        navLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                menu.classList.remove('active');
-                mobileToggle.innerHTML = '<i class="fas fa-bars"></i>';
-            });
-        });
-        
-        // FAQ Accordion
-        document.querySelectorAll('.faq-question').forEach(question => {
-            question.addEventListener('click', () => {
-                const answer = question.nextElementSibling;
-                const icon = question.querySelector('i');
-                
-                // Close other open FAQs
-                document.querySelectorAll('.faq-answer').forEach(otherAnswer => {
-                    if (otherAnswer !== answer && otherAnswer.classList.contains('open')) {
-                        otherAnswer.classList.remove('open');
-                        otherAnswer.previousElementSibling.querySelector('i').classList.remove('fa-chevron-up');
-                        otherAnswer.previousElementSibling.querySelector('i').classList.add('fa-chevron-down');
-                    }
-                });
-                
-                // Toggle current FAQ
-                answer.classList.toggle('open');
-                
-                if (answer.classList.contains('open')) {
-                    icon.classList.remove('fa-chevron-down');
-                    icon.classList.add('fa-chevron-up');
-                } else {
-                    icon.classList.remove('fa-chevron-up');
-                    icon.classList.add('fa-chevron-down');
-                }
-            });
-        });
-        
-        // Smooth Scrolling
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                
-                const targetId = this.getAttribute('href');
-                if (targetId === '#') return;
-                
-                const targetElement = document.querySelector(targetId);
-                if (targetElement) {
-                    const headerHeight = header.offsetHeight;
-                    const targetPosition = targetElement.offsetTop - headerHeight;
-                    
-                    window.scrollTo({
-                        top: targetPosition,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-        
-        // Animated Counter
-        function animateCounter(id, end, start = 0, duration = 2000, suffix = '') {
-            const element = document.getElementById(id);
-            if (!element) return;
-            
-            let startTimestamp = null;
-            const step = (timestamp) => {
-                if (!startTimestamp) startTimestamp = timestamp;
-                const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-                const value = Math.floor(progress * (end - start) + start);
-                
-                if (id === 'stat2') {
-                    element.textContent = value.toFixed(1) + 'M';
-                } else if (id === 'stat3') {
-                    element.textContent = '$' + value.toFixed(1) + 'M';
-                } else {
-                    element.textContent = value + suffix;
-                }
-                
-                if (progress < 1) {
-                    window.requestAnimationFrame(step);
-                }
-            };
-            window.requestAnimationFrame(step);
+        function toggleTheme() {
+            const html = document.documentElement;
+            const newTheme = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+            html.setAttribute('data-theme', newTheme);
+            document.body.setAttribute('data-theme', newTheme);
+            document.querySelector('meta[name="theme-color"]').setAttribute('content', newTheme==='dark'?'#000000':'#ffffff');
+            localStorage.setItem('metrolinkz-theme', newTheme);
         }
-        
-        // Initialize animations on load
-        window.addEventListener('load', () => {
-            // Trigger counter animations
-            setTimeout(() => {
-                animateCounter('stat1', 6, 0, 1500);
-                animateCounter('stat2', 30.6, 0, 1500);
-                animateCounter('stat3', 11.5, 0, 1500);
-                animateCounter('stat4', 2024, 2020, 1500);
-            }, 1000);
-            
-            // Add scroll-triggered animations
-            const observerOptions = {
-                threshold: 0.1,
-                rootMargin: '0px 0px -100px 0px'
-            };
-            
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('animated');
-                        observer.unobserve(entry.target);
-                    }
-                });
-            }, observerOptions);
-            
-            // Observe all sections
-            document.querySelectorAll('.section-title, .ecosystem-card, .leader-card, .team-card, .faq-item, .footer-column').forEach(el => {
-                observer.observe(el);
-            });
-        });
-        
-        // Add hover effect to cards
-        document.querySelectorAll('.ecosystem-card, .leader-card, .team-card').forEach(card => {
-            card.addEventListener('mouseenter', () => {
-                card.style.transform = 'translateY(-5px)';
-            });
-            
-            card.addEventListener('mouseleave', () => {
-                card.style.transform = 'translateY(0)';
-            });
-        });
+        (function(){
+            const saved = localStorage.getItem('metrolinkz-theme');
+            if(saved){ document.documentElement.setAttribute('data-theme',saved); document.body.setAttribute('data-theme',saved); }
+        })();
+
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            const btn = document.getElementById('mobileMenuBtn');
+            const overlay = document.getElementById('mobileOverlay');
+            const open = menu.classList.contains('open');
+            if(open) { closeMobileMenu(); } else {
+                menu.classList.add('open'); btn.classList.add('active'); overlay.classList.add('active'); document.body.style.overflow='hidden';
+            }
+        }
+        function closeMobileMenu() {
+            document.getElementById('mobileMenu').classList.remove('open');
+            document.getElementById('mobileMenuBtn').classList.remove('active');
+            document.getElementById('mobileOverlay').classList.remove('active');
+            document.body.style.overflow='';
+        }
+        document.getElementById('mobileOverlay').addEventListener('click', closeMobileMenu);
+
+        function toggleMobileSubmenu(trigger) {
+            const sub = trigger.nextElementSibling;
+            sub.classList.toggle('open');
+        }
+
+        function toggleFAQ(btn) {
+            const item = btn.closest('.faq-item');
+            const wasOpen = item.classList.contains('open');
+            // Close all other FAQ items
+            document.querySelectorAll('.faq-item.open').forEach(i => { i.classList.remove('open'); i.querySelector('.faq-question').setAttribute('aria-expanded','false'); });
+            if(!wasOpen){
+                item.classList.add('open');
+                btn.setAttribute('aria-expanded','true');
+            }
+        }
+
+        const nav = document.getElementById('navContainer');
+        window.addEventListener('scroll', ()=>{ nav.classList.toggle('scrolled', window.scrollY>60); }, {passive:true});
+
+        const observer = new IntersectionObserver((entries)=>{ entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('visible'); observer.unobserve(e.target); } }) }, {threshold:0.12});
+        document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        document.querySelectorAll('a[href^="#"]').forEach(a=>{ a.addEventListener('click',function(e){ const t=document.querySelector(this.getAttribute('href')); if(t){ e.preventDefault(); window.scrollTo({top:t.offsetTop - 80, behavior:'smooth'}); } }); });
     </script>
 </body>
 </html>
